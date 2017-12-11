@@ -1,0 +1,291 @@
+/*@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);*/
+
+body {
+    background-color: #ffe7e7 !important;
+    /*width: 100%;*/
+}
+
+#cover_photo {
+    background-image: url("../img/cover.jpg");
+    height: 100%;
+    width: 160%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#cover-text {
+    margin-left: 25px;
+}
+
+#cover-text h1 {
+    font-size: 75px;
+    color: #e25488;
+}
+
+#cover-text #subtitle {
+    color: gray;
+}
+
+.w3-white {
+    background-color: #e25488 !important;
+}
+
+.w3-button {
+    color: white;
+}
+
+.w3-button:hover {
+    color: lightpink !important;
+    font-weight: bold;
+    background-color: #e25488 !important;
+}
+
+.w3-padding-32 {
+    padding-bottom: 0px !important;
+}
+
+fieldset, label {
+    padding: 0;
+    align-items: center;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#interactive-introduction {
+    text-align:center;
+    margin: auto;
+}
+
+#answer{
+    text-align:center;
+    margin: auto;
+    position: relative;
+    /* left: 20%; */
+}
+
+/****** Style Star Rating Widget *****/
+
+.rating {
+    align-items: center;
+    border: none;
+    margin: 10px;
+    display: inline-block;
+    overflow: auto;
+}
+
+.rating > input { display: none; }
+.rating > label:before {
+    margin: 10px;
+    font-size: 6.55em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f182";
+}
+
+.rating > label {
+    color: #58adf2;
+    float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label {
+    color: #e25488;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: rgba(251, 12, 10, 0.28);  }
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 .divider {
+	margin: 0 8px;
+	margin: 0 8px;
+}
+
+h1 .sub-headline {
+	color: #888;
+	font-weight: 300;
+}
+
+h3 {
+    font-family: "Open Sans";
+    font-weight: 900;
+    color: #e25488;
+}
+
+h4 {
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+
+h5 {
+    font-family: "Open Sans";
+    font-size: 10px;
+}
+
+#ivy-league-map {
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 1400px;
+    align-items: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.row {
+    width: 1400px;
+    align-items: center;
+    display: block;
+    margin: 0 auto;
+}
+
+#text4 {
+    font-size: 18px;
+    font-weight: bold;
+    fill: #e25488;
+}
+
+.female{
+    color: #e25488;
+    width:60px;
+}
+
+.male{
+    color: #58adf2;
+    size:30px;
+    width:60px;
+}
+
+.answerLine{
+    font-size:25px;
+}
+
+#ivy-league-map {
+    z-index: 0;
+}
+
+
+/*Timeline CSS*/
+
+#school-history {
+    background-color: #e25488;
+}
+
+#timelineStuff {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.timescale path {
+    stroke: #e25488 !important;
+}
+
+.timescale .tick text {
+    fill: #e25488 !important;
+}
+
+.d3-tip, .tooltip {
+    width: 250px;
+    position: absolute;
+    padding: 10px;
+    color: white;
+    background-color: #e25488;
+    border-radius: 5px;
+}
+
+#timeline-description-box {
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+#timeline-description {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    display: none;
+    padding: 20px;
+    border: 3px solid #e25488;
+    border-radius: 20px;
+}
+
+#description {
+    font-size: 20px;
+}
+
+#moreDetail {
+    font-size: 16px;
+}
+
+/*****Carousel CSS*****/
+
+.intro-responses {
+    padding-left: 16px;
+}
+
+.carousel-inner {
+    width:100%;
+    height: 250px !important;
+}
+
+.carousel-control {
+    width: 5% !important;
+}
+
+.glyphicon-chevron-left {
+    color: lightpink;
+}
+
+.glyphicon-chevron-right {
+    color: lightpink;
+}
+
+.glyphicon-chevron-left {
+    color: lightpink;
+}
+
+.glyphicon-chevron-right {
+    color: lightpink;
+}
+
+
+#survey {
+    text-align: center;
+}
+
+#about {
+    padding-left: 16px;
+}
+.about{
+    padding-left: 16px;
+}
+
+hr {
+    display: block;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-style: inset;
+    border-width: 1px;
+    color:black;
+}
+
+.fp-tableCell{
+    height: 200px !important;
+}
