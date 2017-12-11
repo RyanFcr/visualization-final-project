@@ -1,0 +1,47 @@
+{"0": {"name": "Brown University",
+  "male": 0.66, "female": 0.34,
+  "link": "https://www.brown.edu/about/facts/faculty-and-employees",
+  "lat": 41.826772, "long": -71.402548,
+  "icon":"Brown.png"},
+
+  "1": {"name": "Columbia University",
+    "male": 0.68, "female": 0.32,
+    "link": "http://www.columbia.edu/cu/opir/abstract/opir_faculty_gender_1.htm",
+    "lat": 40.807536, "long": -73.962573,
+    "icon":"Columbia.png"},
+
+  "2": {"name": "Cornell University",
+    "male": 0.7, "female": 0.3,
+    "link": "http://diversity.cornell.edu/sites/default/files/uploaded-files/Cornell%20University%202016%20Inclusion%20Report.pdf",
+    "lat": 42.453449, "long": -76.473503,
+    "icon":"Cornell.png"},
+
+  "3": {"name": "Dartmouth College",
+    "male": 0.682, "female": 0.318,
+    "link": "https://www.dartmouth.edu/~oir/data-reporting/factbook/faculty.html",
+    "lat": 43.704441, "long": -72.288694,
+    "icon":"dartmouth_shield.png"},
+
+  "4": {"name": "Harvard University",
+    "male": 0.683, "female": 0.317,
+    "link": "https://oir.harvard.edu/fact-book/faculty_and_staff",
+    "lat": 42.377003, "long": -71.11666,
+    "icon":"harvardlogo.jpg"},
+
+  "5": {"name": "University of Pennsylvania",
+    "male": 0.673, "female": 0.327,
+    "link": "https://diversity.upenn.edu/diversity-at-penn/facts-and-figures#faculty",
+    "lat": 39.952219, "long": -75.193214,
+    "icon":"upenn_shield.png"},
+
+  "6": {"name": "Princeton University",
+    "male": 0.76, "female": 0.24,
+    "link": "https://inclusive.princeton.edu/about/demographics",
+    "lat": 40.343989, "long": -74.651448,
+    "icon":"princeton_pointer.png"},
+
+  "7": {"name": "Yale University",
+    "male": 0.71, "female": 0.29,
+    "link": "https://faculty.yale.edu/faculty-demographics",
+    "lat": 41.316324, "long": -72.922343,
+    "icon":"Yale.png"}}

@@ -1,2 +1,1 @@
-# cs171
-final project
+# haixing
