@@ -6,7 +6,7 @@
 
 --------------------------------------------
 Project Website Link:
-https://github.com/powerpuff_girls/w.o.w
+https://haixing-yin.github.io/powerpuff_girls/
 --------------------------------------------
 Screencast Link:
 https://www.youtube.com/watch?v=-4c1ckOrUAw
