@@ -9,7 +9,7 @@ Project Website Link:
 https://github.com/powerpuff_girls/w.o.w
 --------------------------------------------
 Screencast Link:
-https://youtu.be/MDv8lJ435hw
+https://www.youtube.com/watch?v=-4c1ckOrUAw
 --------------------------------------------
 Process Book Link:
 https://docs.google.com/a/college.harvard.edu/document/d/1O4JA_4TIy3m5wa6vvIA7Lxxx8vBbGnX27z5FPNPiXsE/edit?usp=sharing
