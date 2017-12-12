@@ -342,6 +342,14 @@ fieldset, label {
     padding-left: 16px;
 }
 
+a {
+    color: #e25488;
+}
+
+a:hover {
+    color: #e25488;
+}
+
 
 
 hr {
