@@ -147,8 +147,6 @@ function updatePieChart(){
     color = d3.scaleOrdinal([ "#58adf2","#e25488"]);
 
     pie = d3.pie();
-    // pie2 = d3.pie();
-    // pie3 = d3.pie();
 
     path1 = d3.arc()
         .outerRadius(radius - 10)
@@ -169,7 +167,6 @@ function updatePieChart(){
             .attr("fill", function(d, i) { return color(i); });
 
         arc1.append("text")
-            // .attr("transform", function(d) { return "translate(" + label1.centroid(d) + ")"; })
             .attr("transform", function(d) {
                 var _d = label1.centroid(d);
                 _d[0]-=8;	//multiply by a constant factor

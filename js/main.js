@@ -51,8 +51,6 @@ $("input[name='rating']").click(function(){
         "                <i class=\"fa fa-male male fa-5x\" aria-hidden=\"true\"></i>\n" +
         "                <i class=\"fa fa-male male fa-5x\" aria-hidden=\"true\"></i>\n";
 
-    // +"<h1>There is a clear gender imbalance among Harvard faculty.</h1>"
-
     el.innerHTML=previous+answer;
 
 });

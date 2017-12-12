@@ -19,7 +19,6 @@ IvyLeagueMap = function(_parentElement, _data,_mapPosition) {
     this.initVis();
 }
 
-
 /*
  *  Initialize station map
  */
@@ -43,10 +42,6 @@ IvyLeagueMap.prototype.initVis = function() {
         attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ'
     }).addTo(vis.map);
 
-    // var Esri_WorldGrayCanvas = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-    //     attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
-    //     maxZoom: 16
-    // });
 
     vis.wrangleData();
 }
@@ -100,11 +95,6 @@ IvyLeagueMap.prototype.updateVis = function() {
             .bindTooltip(label).on("click",function(d){
                 updateBarChart(school, vis);
             });
-        // else{
-        // 	vis.marker = L.marker([d.lat, d.long])
-        // 		.bindTooltip(label).on("click",function(d){
-        // 		    updateBarChart(school, vis);
-        //        });}
 
         // Add marker to layer group
         vis.markerLayer.addLayer(vis.marker);

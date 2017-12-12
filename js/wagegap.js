@@ -91,12 +91,6 @@ function updateWagegap(){
     x.domain(d3.extent(wage_data, function(d) { return d.date; }));
 
     var min_category = d3.min(wage_data, function (d) {
-        // if(d[men]<d[women]){
-        //     return d[women]
-        // }
-        // else{
-        //     return d[men];
-        // }
         return d["women_"+category]
     });
     var max_category = d3.max(wage_data, function (d) {
@@ -213,8 +207,6 @@ function updateWagegap(){
             .ease(d3.easeLinear)
             .attr("stroke-dashoffset", 0);
     }
-
-
 
 
     var focus = svg.append("g")

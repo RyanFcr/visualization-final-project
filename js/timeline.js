@@ -85,8 +85,6 @@ d3.csv('data/history.csv', function(error,csv){
         .attr('r', '3px')
         .attr('cy', '3px')
         .attr('fill', function(d) {return textColor(yval(d)) })
-        // .attr('fill', 'white')
-        // .attr('stroke-width', '3px')
         .on("mouseover", tool_tip.show)
         .on("mouseout", tool_tip.hide)
         .on("click", showMoreInfo);
@@ -159,8 +157,6 @@ function updateVisualization() {
         .attr('r', '6px')
         .attr('cy', '3px')
         .attr('fill', function(d) {return textColor(yval(d)) })
-        // .attr('fill', 'white')
-        // .attr('stroke-width', '4px')
         .on("mouseover", tool_tip.show)
         .on("mouseout", tool_tip.hide)
         .on("click", showMoreInfo);
