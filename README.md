@@ -47,9 +47,9 @@ https://docs.google.com/a/college.harvard.edu/document/d/1O4JA_4TIy3m5wa6vvIA7Lx
 
 
 ## CSS
-style.css
-main.css
-sequences.css
+* style.css
+* main.css
+* sequences.css
 
 ## HTML
 index.html
