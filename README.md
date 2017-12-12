@@ -11,6 +11,9 @@ https://github.com/powerpuff_girls/w.o.w
 Screencast Link:
 https://vimeo.com/195363644
 --------------------------------------------
+Process Book Link:
+https://docs.google.com/a/college.harvard.edu/document/d/1O4JA_4TIy3m5wa6vvIA7Lxxx8vBbGnX27z5FPNPiXsE/edit?usp=sharing
+--------------------------------------------
 Github Repo Link:
 https://github.com/haixing-yin/powerpuff_girls
 --------------------------------------------
@@ -40,7 +43,6 @@ https://github.com/haixing-yin/powerpuff_girls
 * IvyLeagueMap.js
 * barChart.js
 * main.js
-* off.js
 * sequences.js
 * timeline.js
 * wagegap.js
@@ -64,5 +66,5 @@ index.html
 * quotesdata.csv
 * wagedata.csv
 * wagegap.csv
-=======
+
 
