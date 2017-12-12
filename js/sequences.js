@@ -14,8 +14,8 @@ var b = {
 // Mapping of step names to colors.
 var colors = {
     "SEAS": "#b4c7cd",
-    "Science": "#d86375",
-    "Arts & Humanities": "#d5c3b5",
+    "Science": "#7c628e",
+    "Arts & Humanities": "#8e6f59",
     "Social Sciences": "#5a6f5e",
     "Materials Science & Mech Eng": "#CBDEE4",
     "Computer Science":"CBDEE4",
@@ -23,34 +23,34 @@ var colors = {
     "Electrical Eng": "CBDEE4",
     "Biomedical Engineering": "CBDEE4",
     "Environmental Science & Eng": "CBDEE4",
-    "Theater, Dance & Media": "F4E2D2",//ding
-    "Romance Langs & Lits": "F4E2D2",//ding
-    "Music": "F4E2D2",//ding
-    "History of Art and Architecture": "F4E2D2",
-    "East Asian Langs & Civs": "F4E2D2",//ding
-    "English": "F4E2D2",
-    "Religion": "F4E2D2",
-    "Celtic Langs & Lits": "F4E2D2",
-    "Slavic Langs & Lits": "F4E2D2",//ding
-    "Visual & Environmental Studies": "F4E2D2",
-    "Folklore & Mythology": "F4E2D2",
-    "Philosophy": "F4E2D2",
-    "Germanic Langs & Lits": "F4E2D2",
-    "Comparative Literature": "F4E2D2",
-    "South Asian Studies": "F4E2D2",
-    "The Classics": "F4E2D2",
-    "Near Eastern Langs & Civs": "F4E2D2",
-    "Linguistics": "F4E2D2",
-    "Statistics":"FF708F",
-    "Molecular & Cellular Biology":"FF708F",
-    "Organismic & Evolutionary Biology":"FF708F",
-    "Stem Cell & Regenerative Biology":"FF708F",
-    "Physics":"FF708F",
-    "Chemistry & Chemical Biology":"FF708F",
-    "Earth & Planetary Sciences":"FF708F",
-    "Astronomy":"FF708F",
-    "Math":"FF708F",
-    "Human Evolutionary Biology":"FF708F",
+    "Theater, Dance & Media": "#d5c3b5",//ding
+    "Romance Langs & Lits": "#d5c3b5",//ding
+    "Music": "#d5c3b5",//ding
+    "History of Art and Architecture": "#d5c3b5",
+    "East Asian Langs & Civs": "#d5c3b5",//ding
+    "English": "#d5c3b5",
+    "Religion": "#d5c3b5",
+    "Celtic Langs & Lits": "#d5c3b5",
+    "Slavic Langs & Lits": "#d5c3b5",//ding
+    "Visual & Environmental Studies": "#d5c3b5",
+    "Folklore & Mythology": "#d5c3b5",
+    "Philosophy": "#d5c3b5",
+    "Germanic Langs & Lits": "#d5c3b5",
+    "Comparative Literature": "#d5c3b5",
+    "South Asian Studies": "#d5c3b5",
+    "The Classics": "#d5c3b5",
+    "Near Eastern Langs & Civs": "#d5c3b5",
+    "Linguistics": "#d5c3b5",
+    "Statistics":"#b694ce",
+    "Molecular & Cellular Biology":"#b694ce",
+    "Organismic & Evolutionary Biology":"#b694ce",
+    "Stem Cell & Regenerative Biology":"#b694ce",
+    "Physics":"#b694ce",
+    "Chemistry & Chemical Biology":"#b694ce",
+    "Earth & Planetary Sciences":"#b694ce",
+    "Astronomy":"#b694ce",
+    "Math":"#b694ce",
+    "Human Evolutionary Biology":"#b694ce",
     "Women, Gender, & Sexuality":"839C89",//ding
     "History of Science":"839C89",
     "African & African American Studies":"839C89",
@@ -78,6 +78,8 @@ var arc = d3.arc()
     .endAngle(function(d) { return d.x1; })
     .innerRadius(function(d) { return Math.sqrt(d.y0); })
     .outerRadius(function(d) { return Math.sqrt(d.y1); });
+
+
 
 // Use d3.text and d3.csvParseRows so that we do not need to have a header
 // row, and can receive the csv as an array of arrays.
@@ -142,7 +144,7 @@ function createVisualization(json) {
         }
     }
 
-    var percentage = (totalFemaleValue / totalValue * 100).toPrecision(3);
+    var percentage = Math.floor(totalFemaleValue / totalValue * 100);
     var percentageString = percentage + "%";
     if (percentage < 0.1) {
         percentageString = "< 0.1%";
@@ -162,21 +164,57 @@ function createVisualization(json) {
         .attr("fill-rule", "evenodd")
         .style("fill", function(d) { return colors[d.data.name]; })
         .style("opacity", 1)
-        .on("mouseover", mouseover)
-        .on("click",clicked);
+        .on("mouseover", mouseover);
+
+    vis.append("svg:text")
+        .attr("transform", "translate(145,-65) rotate(65)")
+        .attr("text-anchor", "middle")
+        .attr("fill","white")
+        .attr("font-family","Arial")
+        .attr("font-weight", "bold")
+        .attr("font-size","20")
+        .text("ARTS & HUM.");
+
+    vis.append("svg:text")
+        .attr("transform", "translate(-55,-158) rotate(-18)")
+        .attr("text-anchor", "middle")
+        .attr("fill","white")
+        .attr("font-family","Arial")
+        .attr("font-weight", "bold")
+        .attr("font-size","20")
+        .text("SEAS");
+
+    vis.append("svg:text")
+        .attr("transform", "translate(-160,-30) rotate(-80)")
+        .attr("text-anchor", "middle")
+        .attr("fill","white")
+        .attr("font-family","Arial")
+        .attr("font-weight", "bold")
+        .attr("font-size","20")
+        .text("SCIENCE");
+
+    vis.append("svg:text")
+        .attr("transform", "translate(-10,178) rotate(3)")
+        .attr("text-anchor", "middle")
+        .attr("fill","white")
+        .attr("font-family","Arial")
+        .attr("font-weight", "bold")
+        .attr("font-size","20")
+        .text("SOCIAL SCI.");
 
     // Add the mouseleave handler to the bounding circle.
     d3.select("#container").on("mouseleave", mouseleave);
 
 };
-
+var department = "Overall";
+var percentage = 31;
 // Fade all but the current sequence, and show it in the breadcrumb trail.
 function mouseover(d) {
 
     if (!d.value2){
         d.value2 = 0;
     }
-    var percentage = (100 * d.value2 / d.value).toPrecision(3);
+    percentage = Math.floor(100 * d.value2 / d.value);
     var percentageString = percentage + "%";
 
 
@@ -203,100 +241,40 @@ function mouseover(d) {
         })
         .style("opacity", 1);
 
-    var department = d.data["name"]
+    department = d.data["name"]
 
     $('#current_concentration').attr('value', department);
     var myInput = d3.select("#current_concentration");
     myInput.on("change")();
-
-}
-
-var clickPercentage;
-var clickDepartment = "Overall";
-var clickFullstring =  ["Overall", "286 out of the 1040 faculty are female"];
-var clickSequenceArray;
-
-function clicked(d){
-    if (!d.value2){
-        d.value2 = 0;
-    }
-    var percentage = (100 * d.value2 / d.value).toPrecision(3);
-    var percentageString = percentage + "%";
-
-
-    d3.select("#percentage")
-        .text(percentageString);
-
-    d3.select("#explanation")
-        .style("visibility", "");
-
-    fullstring = ["In "+d.data["name"]+",",d.value2 + " out of the " + d.value + " faculty are female"];
-
-    var sequenceArray = d.ancestors().reverse();
-    sequenceArray.shift(); // remove root node from the array
-    updateBreadcrumbs(sequenceArray, fullstring);
-
-    // Fade all the segments.
-    d3.selectAll("path")
-        .style("opacity", 0.3);
-
-    // Then highlight only those that are an ancestor of the current segment.
-    vis.selectAll("path")
-        .filter(function(node) {
-            return (sequenceArray.indexOf(node) >= 0);
-        })
-        .style("opacity", 1);
-
-    var department = d.data["name"]
-
-    $('#current_concentration').attr('value', department);
-    var myInput = d3.select("#current_concentration");
-    myInput.on("change")();
-
-    clickDepartment = department;
-    clickFullstring = fullstring;
-    clickSequenceArray = sequenceArray;
-    clickPercentage = percentage;
 }
 
 // // Restore everything to full opacity when moving off the visualization.
 function mouseleave(d) {
-  // var percentage = (totalFemaleValue / totalValue * 100).toPrecision(3);
-    if (clickPercentage){
-        var percentage = clickPercentage;
-        var percentageString = percentage + "%";
-        if (percentage < 0.1) {
-            percentageString = "< 0.1%";
-        }
-        d3.select("#percentage")
-            .text(percentageString);
+    // var percentage = (totalFemaleValue / totalValue * 100).toPrecision(3);
+    var percentageString = percentage + "%";
+    if (percentage < 0.1) {
+        percentageString = "< 0.1%";
     }
+    d3.select("#percentage")
+        .text(percentageString);
 
-  d3.select("#explanation")
-      .style("visibility", "");
+    d3.select("#explanation")
+        .style("visibility", "");
 
-  // // Hide the breadcrumb trail
-  // d3.select("#trail")
-  //     .style("visibility", "hidden");
-
-  // Deactivate all segments during transition.
-  d3.selectAll("path").on("mouseover", null);
+    // Deactivate all segments during transition.
+    d3.selectAll("path").on("mouseover", null);
 
     // Transition each segment to full opacity and then reactivate it.
     d3.selectAll("path")
         .transition()
-        .duration(1000)
+        .duration(500)
         .style("opacity", 1)
         .on("end", function() {
             d3.select(this).on("mouseover", mouseover);
         });
-//
-  d3.select("#explanation")
-      .style("visibility", "");
 
-    updateBreadcrumbs(clickSequenceArray, clickFullstring);
-
-    var department = clickDepartment;
+    d3.select("#explanation")
+        .style("visibility", "");
 
     $('#current_concentration').attr('value', department);
     var myInput = d3.select("#current_concentration");
@@ -471,22 +449,3 @@ function buildHierarchy(csv) {
     }
     return root;
 };
-
-
-var ordinal = d3.scaleOrdinal()
-    .domain(["Arts & Humanities","Social Sciences","Science","SEAS"])
-    .range(["d5c3b5","#5a6f5e","#d86375","#b4c7cd"]);
-
-vis.append("g")
-    .attr("class","legendOrdinal")
-    .attr("transform","translate(-150,270)")
-
-var legendOrdinal =d3.legendColor()
-    .orient('horizontal')
-    .shape("path",d3.symbol().type(d3.symbolSquare).size(100))
-    .shapePadding(80)
-    .cellFilter(function(d){return d.label !=="e"})
-    .scale(ordinal);
-
-vis.select(".legendOrdinal").call(legendOrdinal);
-

@@ -1,10 +1,57 @@
-/*@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);*/
-
+/*General*/
 body {
     background-color: #ffe7e7 !important;
-    /*width: 100%;*/
+    font-family: "Open Sans", sans-serif;
 }
 
+h1 .divider {
+    margin: 0 8px;
+    margin: 0 8px;
+}
+
+h1 .sub-headline {
+    color: #888;
+    font-weight: 300;
+}
+
+h3 {
+    font-family: "Open Sans";
+    font-weight: 900;
+    color: #e25488;
+}
+
+h4 {
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+
+h5 {
+    font-family: "Open Sans";
+    font-size: 10px;
+}
+
+.instruction {
+    font-size: 16px;
+    color: gray;
+    font-style: italic;
+}
+
+.container-fluid {
+    width: 1400px;
+    align-items: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.row {
+    width: 1400px;
+    align-items: center;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/*Cover/Title Section*/
 #cover_photo {
     background-image: url("../img/cover.jpg");
     height: 100%;
@@ -26,8 +73,17 @@ body {
 
 #cover-text #subtitle {
     color: gray;
+    font-size: 40px;
 }
 
+#story_begin {
+    font-family: "Open Sans";
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+
+/*Nav Bar*/
 .w3-white {
     background-color: #e25488 !important;
 }
@@ -54,6 +110,8 @@ fieldset, label {
     text-align: center;
 }
 
+
+/*Interactive First Viz*/
 #interactive-introduction {
     text-align:center;
     margin: auto;
@@ -63,17 +121,14 @@ fieldset, label {
     text-align:center;
     margin: auto;
     position: relative;
-    /* left: 20%; */
+    font-family: "Open Sans"
 }
-
-/****** Style Star Rating Widget *****/
 
 .rating {
     align-items: center;
     border: none;
     margin: 10px;
     display: inline-block;
-    overflow: auto;
 }
 
 .rating > input { display: none; }
@@ -90,8 +145,6 @@ fieldset, label {
     float: right;
 }
 
-/***** CSS Magic to Highlight Stars on Hover *****/
-
 .rating > input:checked ~ label, /* show gold star when clicked */
 .rating:not(:checked) > label:hover, /* hover current star */
 .rating:not(:checked) > label:hover ~ label {
@@ -102,62 +155,8 @@ fieldset, label {
 .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
 .rating > input:checked ~ label:hover ~ label { color: rgba(251, 12, 10, 0.28);  }
 
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
-h1 .divider {
-	margin: 0 8px;
-	margin: 0 8px;
-}
-
-h1 .sub-headline {
-	color: #888;
-	font-weight: 300;
-}
-
-h3 {
+#ranking-type {
     font-family: "Open Sans";
-    font-weight: 900;
-    color: #e25488;
-}
-
-h4 {
-    font-family: "Open Sans";
-    font-weight: 400;
-}
-
-h5 {
-    font-family: "Open Sans";
-    font-size: 10px;
-}
-
-#ivy-league-map {
-    width: 500px;
-    height: 500px;
-    align-items: center;
-    display: block;
-    margin: 0 auto;
-}
-
-.container-fluid {
-    width: 1400px;
-    align-items: center;
-    display: block;
-    margin: 0 auto;
-}
-
-.row {
-    width: 1400px;
-    align-items: center;
-    display: block;
-    margin: 0 auto;
-}
-
-#text4 {
-    font-size: 18px;
-    font-weight: bold;
-    fill: #e25488;
 }
 
 .female{
@@ -175,15 +174,70 @@ h5 {
     font-size:25px;
 }
 
+
+/*Map Viz*/
 #ivy-league-map {
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    display: block;
+    margin: 0 auto;
     z-index: 0;
+}
+
+
+/*Wage Gap Chart Viz*/
+.legend { list-style: none; }
+.legend li { float: left; margin-right: 10px; }
+.legend span { border: 1px solid; float: left; width: 12px; height: 12px; margin: 2px; }
+/* your colors */
+.legend .female { background-color: #e25488; margin-right: 5px; }
+.legend .male { background-color: #58adf2; margin-right: 5px;  }
+
+
+.form-control {
+    background-color: #e25488 !important;
+    color: white !important;
+    border: none !important;
+}
+
+#text1 {
+    font-family: "Open Sans";
+    font-weight: 200;
+}
+
+#text2 {
+    font-family: "Open Sans";
+    font-weight: 200;
+}
+
+#text3 {
+    font-family: "Open Sans";
+    font-weight: 200;
+}
+
+#text4 {
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: bold;
+    fill: #e25488;
 }
 
 
 /*Timeline CSS*/
 
+.form-group {
+    font-family: "Open Sans";
+}
+
+
 #school-history {
     background-color: #e25488;
+}
+
+#dartmouth-text {
+    color: #c7c7c7;
+    display: inline-block;
 }
 
 #timelineStuff {
@@ -193,15 +247,12 @@ h5 {
 }
 
 .timescale path {
-    stroke: #e25488 !important;
-}
-
-.timescale .tick text {
-    fill: #e25488 !important;
+    stroke: lightgray !important;
 }
 
 .d3-tip, .tooltip {
-    width: 250px;
+    width: 300px;
+    font-size: 16px;
     position: absolute;
     padding: 10px;
     color: white;
@@ -221,28 +272,39 @@ h5 {
     margin: auto;
     text-align: center;
     display: none;
-    padding: 20px;
+    padding: 15px;
     border: 3px solid #e25488;
     border-radius: 20px;
+    font-family: "Open Sans";
 }
 
 #description {
     font-size: 20px;
+    font-family: "Arial";
+    /*font-weight: bolder;*/
 }
 
 #moreDetail {
     font-size: 16px;
 }
 
-/*****Carousel CSS*****/
+
+/*Carousel CSS*/
 
 .intro-responses {
     padding-left: 16px;
 }
 
+#qna {
+    border: 3px solid #e25488;
+    border-radius: 20px;
+}
+
 .carousel-inner {
-    width:100%;
-    height: 250px !important;
+    font-family: "Open Sans";
+    width: 100%;
+    height: 160px !important;
+    margin-bottom: 20px;
 }
 
 .carousel-control {
@@ -266,16 +328,21 @@ h5 {
 }
 
 
+/*Survey*/
 #survey {
     text-align: center;
 }
 
+
+/*About*/
 #about {
     padding-left: 16px;
 }
 .about{
     padding-left: 16px;
 }
+
+
 
 hr {
     display: block;
@@ -286,6 +353,17 @@ hr {
     color:black;
 }
 
-.fp-tableCell{
+.fp-tableCell {
     height: 200px !important;
+}
+
+#reference_list {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 10px;
+    margin-left: 50px;
+}
+
+.last-section h5 {
+    font-size: 12px;
 }

@@ -1,7 +1,7 @@
 // resource: https://codepen.io/mhartley/pen/yoEEJZ?editors=0010
 
 var twidth = 1250,
-    theight = 150;
+    theight = 125;
 
 var svgTime = d3.select('#timeline').append('svg')
     .attr('width', twidth)
@@ -34,7 +34,7 @@ svgTime.append('g')
     .call(timeaxis)
     .attr('transform', 'translate(0,' + theight / 2 + ')')
     .attr('font-size', '14px')
-    .attr('fill', '#e25488');
+    .attr('fill', 'lightgray');
 
 var mapx = function(d) { return timeScale(d.year); };
 var yval = function(d) { return d.type; } ;
@@ -84,9 +84,9 @@ d3.csv('data/history.csv', function(error,csv){
     generaleventdot.append('circle')
         .attr('r', '3px')
         .attr('cy', '3px')
-        .attr('stroke', function(d) {return textColor(yval(d)) })
-        .attr('fill', 'white')
-        .attr('stroke-width', '3px')
+        .attr('fill', function(d) {return textColor(yval(d)) })
+        // .attr('fill', 'white')
+        // .attr('stroke-width', '3px')
         .on("mouseover", tool_tip.show)
         .on("mouseout", tool_tip.hide)
         .on("click", showMoreInfo);
@@ -156,11 +156,11 @@ function updateVisualization() {
     eventdot.append('circle');
 
     eventdotGroup.merge(eventdot).append('circle')
-        .attr('r', '5px')
+        .attr('r', '6px')
         .attr('cy', '3px')
-        .attr('stroke', function(d) {return textColor(yval(d)) })
-        .attr('fill', 'white')
-        .attr('stroke-width', '4px')
+        .attr('fill', function(d) {return textColor(yval(d)) })
+        // .attr('fill', 'white')
+        // .attr('stroke-width', '4px')
         .on("mouseover", tool_tip.show)
         .on("mouseout", tool_tip.hide)
         .on("click", showMoreInfo);

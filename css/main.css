@@ -78,7 +78,7 @@ header {
   margin-top: 10px;
 }
 .sub-title {
-  color: #505050;
+  color: #e25488;
   text-align: left;
 }
 .card-bg {
@@ -87,20 +87,13 @@ header {
   line-height: 30px;
   padding: 20px;
   margin-top: 40px;
-  border: 10px solid #fff;
-  border-radius: 4px;
+  border: 3px solid #e25488;
+  border-radius: 50px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.card-bg-pink {
-  background: #fc9b7a;
-}
-.card-bg-blue {
-  background: #8bacbd;
-}
+
 .card-bg h4 {
   line-height: 30px;
-  text-indent: 2rem;
-  color: #fff;
   text-align: left;
 }
 .card-between {
@@ -173,20 +166,11 @@ header {
   background: url("../img/icons/tubiaoleftpink.png") no-repeat center center;
   background-size: 100%;
 }
-.last-section {
-  background: #eaeaea;
-}
 
 .sub-title-2 {
   font-size: 24px;
-  color: #8bacbd;
   text-align: left;
   line-height: 1.2;
-}
-
-.car-right-line {
-  width: 80%;
-  margin: 0 auto;
 }
 
 #questions .col-md-6 {
@@ -197,23 +181,23 @@ header {
   padding: 20px;
   padding-bottom: 0;
 }
+
 #ivy-league-map {
-  border: 3px solid #e25488;
+  border: 1px solid #e25488;
   border-radius: 50px;
 }
 #ivy-league-bar-chart {
   text-align: left;
 }
 .select-school {
-  font-size: 20px;
   font-weight: normal;
-  text-align: left;
+  /*text-align: center;*/
   display: block;
   width: 100%;
-  color: #505050;
   margin-bottom: 8px;
   margin-top: 10px;
 }
+
 #school {
   text-align: left;
   display: block;

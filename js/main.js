@@ -32,10 +32,11 @@ $("input[name='rating']").click(function(){
     });
     // d3.select("#guess").style("display", "none");
     var el = document.getElementById("answer");
-    if (guess <= 30){
+    if (guess < 30){
         previous = "<hr><br><p class=\"answerLine\">Your guess is " + guess + "%. Very close! The correct answer is 31.7%.</p><br><br>"}
-    else {
-
+    else if(guess == 30){
+        previous = "<hr><br><p class=\"answerLine\">Correct! About 3 in 10 (31.7% to be exact) faculty are listed as female.</p><br><br>"}
+       else {
         previous = "<hr><br><p class=\"answerLine\">Your guess is " + guess + "%. Well, actually the correct answer is 31.7%.</p><br><br>"
     }
 
@@ -48,8 +49,9 @@ $("input[name='rating']").click(function(){
         "                <i class=\"fa fa-male male fa-5x\" aria-hidden=\"true\"></i>\n" +
         "                <i class=\"fa fa-male male fa-5x\" aria-hidden=\"true\"></i>\n" +
         "                <i class=\"fa fa-male male fa-5x\" aria-hidden=\"true\"></i>\n" +
-        "                <i class=\"fa fa-male male fa-5x\" aria-hidden=\"true\"></i>\n"
-        +"<h1>There is a clear gender imbalance among Harvard faculty.</h1>";
+        "                <i class=\"fa fa-male male fa-5x\" aria-hidden=\"true\"></i>\n";
+
+    // +"<h1>There is a clear gender imbalance among Harvard faculty.</h1>"
 
     el.innerHTML=previous+answer;
 

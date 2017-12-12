@@ -192,11 +192,11 @@ function updatePieChart(){
             .attr("fill", function(d, i) { if(i!=999){return "lightgrey"; }});
 
         arc1.append("text")
-            .attr("transform", function(d) { return "translate(-20,0)";})
+            .attr("transform", function(d) { return "translate(-40,0)";})
             .attr("dy", "0.35em")
             .attr("font-size","20")
             .attr("fill","white")
-            .text("NAN");
+            .text("Data N/A");
     }
 
 
@@ -250,11 +250,11 @@ function updatePieChart(){
             .attr("fill", function(d, i) { if(i!=999){return "lightgrey"; }});
 
         arc2.append("text")
-            .attr("transform", function(d) { return "translate(-20,0)";})
+            .attr("transform", function(d) { return "translate(-40,0)";})
             .attr("dy", "0.35em")
             .attr("font-size","20")
             .attr("fill","white")
-            .text("NAN");
+            .text("Data N/A");
     }
 
     //asst
@@ -301,11 +301,11 @@ function updatePieChart(){
             .attr("fill", function(d, i) { if(i!=999){return "lightgrey"; }});
 
         arc3.append("text")
-            .attr("transform", function(d) { return "translate(-20,0)";})
+            .attr("transform", function(d) { return "translate(-40,0)";})
             .attr("dy", "0.35em")
             .attr("font-size","20")
             .attr("fill","white")
-            .text("NAN");
+            .text("Data N/A");
     }
 
 }

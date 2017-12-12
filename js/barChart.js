@@ -33,7 +33,7 @@ function updateBarChart(school, vis) {
         var svg = d3.select("#ivy-league-bar-chart").append("svg")
             .attr("width", width)
             .attr("height", height)
-            .style("border", "3px solid #e25488")
+            .style("border", "1px solid #e25488")
             .style("border-radius", "50px")
             .style("padding-left","-10px")
             // .attr("transform","translate(150,40)")
@@ -45,8 +45,9 @@ function updateBarChart(school, vis) {
             .attr("x", width / 2)
             .attr("y", 50)
             .text(schoolData[0]["name"]).style("text-anchor", "middle")
-            .attr("font-weight", "bold")
-            .attr("font-size", "20");
+            .attr("font-weight", "900")
+            .attr("font-size", "20")
+            .attr("font-family", "Open Sans");
 
         svg.append("g")
             .append("text")
@@ -63,7 +64,8 @@ function updateBarChart(school, vis) {
             .attr("x", "39%")
             .attr("y", 210)
             .text("of faculty are female.")
-            .attr("font-size", "18");
+            .attr("font-size", "18")
+            .attr("font-family", "Open Sans");
 
         var image_width = 125;
         svg.append("g")
@@ -109,25 +111,28 @@ function updateBarChart(school, vis) {
             .attr("font-size", "14")
             .attr("font-weight", "bold")
             .attr("x", "20%")
-            .attr("y", 330);
+            .attr("y", 330)
+            .attr("font-family", "Open Sans");
 
         svg.append("g")
             .append("text")
             .text("Associate Professors")
             .style("text-anchor", "middle")
-            .attr("font-size", "14")
+            .attr("font-size", "13.5")
             .attr("font-weight", "bold")
             .attr("x", "50%")
-            .attr("y", 330);
+            .attr("y", 330)
+            .attr("font-family", "Open Sans");
 
         svg.append("g")
             .append("text")
             .text("Assistant Professors")
             .style("text-anchor", "middle")
-            .attr("font-size", "14")
+            .attr("font-size", "13.5")
             .attr("font-weight", "bold")
             .attr("x", "80%")
-            .attr("y", 330);
+            .attr("y", 330)
+            .attr("font-family", "Open Sans");
 
         svg.append("g")
             .append("text")
@@ -162,11 +167,12 @@ function updateBarChart(school, vis) {
 
         svg.append("g")
             .append("text")
-            .text("They (by faculty type) earn...")
+            .text("Female faculty earn as")
             .style("text-anchor", "middle")
             .attr("font-size", "18")
             .attr("x", width/2)
-            .attr("y", 290);
+            .attr("y", 290)
+            .attr("font-family", "Open Sans");
 
         svg.append("g")
             .append("text")
@@ -174,7 +180,8 @@ function updateBarChart(school, vis) {
             .style("text-anchor", "middle")
             .attr("font-size", "18")
             .attr("x", width/2)
-            .attr("y", 440);
+            .attr("y", 440)
+            .attr("font-family", "Open Sans");
 
         svg.append('rect')
             .attr('class', 'bg-rect')

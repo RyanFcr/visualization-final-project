@@ -45,6 +45,7 @@ body {
 
 #chart path {
   stroke: #fff;
+  cursor: pointer;
 }
 
 #explanation {
@@ -63,4 +64,5 @@ body {
 .bigger{
   font-size:25px;
   line-height:70%;
+  font-family:'Open Sans';
 }

@@ -11,7 +11,8 @@
   <title>WOMEN IN THE WORKPLACE</title>
 
   <!-- Load Google Font -->
-  <link href='https://fonts.googleapis.com/css?family=Roboto:100,400,300,400italic,700' rel='stylesheet' type='text/css'>
+  <!--<link href='https://fonts.googleapis.com/css?family=Roboto:100,400,300,400italic,700' rel='stylesheet' type='text/css'>-->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
 
   <link rel="stylesheet" href="css/w3.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -24,7 +25,7 @@
   <script>
       $(function () {
           $('#fullpage').fullpage({
-              anchors: ["cover","firstPage", 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage',"eighthPage","ninthPage", 'lastPage'],
+              anchors: ["cover","firstPage", 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage',"eighthPage", 'lastPage'],
           });
       });
   </script>
@@ -32,126 +33,141 @@
 
 <body style="width: 100%;background:#f5f5f5">
 
-  <div class="main-container">
-    <div class="w3-top">
-      <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-        <a href="#cover" class="w3-bar-item w3-button"><b>W.O.W.</b></a>
-        <!-- Float links to the right. Hide them on small screens -->
-        <div class="w3-right w3-hide-small">
-          <a href="#firstPage" class="w3-bar-item w3-button">Intro</a>
-          <a href="#secondPage" class="w3-bar-item w3-button">By Concentration</a>
-          <a href="#thirdPage" class="w3-bar-item w3-button">Wage Gap</a>
-          <a href="#fourthPage" class="w3-bar-item w3-button">Other Schools</a>
-          <a href="#fifthPage" class="w3-bar-item w3-button">Nationwide</a>
-          <a href="#sixthPage" class="w3-bar-item w3-button">Timeline</a>
-          <!--<a href="#seventhPage" class="w3-bar-item w3-button">Off</a>-->
-          <a href="#eighthPage" class="w3-bar-item w3-button">Responses</a>
-          <!--<a href="#ninthPage" class="w3-bar-item w3-button">Respond</a>-->
-          <a href="#lastPage" class="w3-bar-item w3-button">About</a>
+<div class="main-container">
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="#cover" class="w3-bar-item w3-button"><b>W.O.W.</b></a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="#firstPage" class="w3-bar-item w3-button">Intro</a>
+        <a href="#secondPage" class="w3-bar-item w3-button">By Concentration</a>
+        <a href="#thirdPage" class="w3-bar-item w3-button">Wage Gap</a>
+        <a href="#fourthPage" class="w3-bar-item w3-button">Other Ivy Leagues</a>
+        <a href="#fifthPage" class="w3-bar-item w3-button">Nationwide</a>
+        <a href="#sixthPage" class="w3-bar-item w3-button">Timeline</a>
+        <!--<a href="#seventhPage" class="w3-bar-item w3-button">Off</a>-->
+        <a href="#seventhPage" class="w3-bar-item w3-button">Responses</a>
+        <a href="#eighthPage" class="w3-bar-item w3-button">Survey</a>
+        <a href="#lastPage" class="w3-bar-item w3-button">About</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="fullpage">
+
+    <div class="section" id="cover_photo">
+      <div>
+        <br><br><br><br><br><br><br><br><br><br>
+        <div id="cover-text">
+          <h1><b>W.O.W. Where are Our Women?</b></h1>
+          <h2 id="subtitle"><b><i>An exploration of female faculty at Harvard and beyond.</i></b></h2>
+          <h2 id="story_begin">Take a look around your classroom.<br>
+            You will most likely see an even distribution between male and female students.<br>
+            But what about the professor lecturing in front?
+          </h2>
+          <br><br><br><br><br><br><br><br>
+          <div style="text-align: center">
+            <p><i>Scroll to continue</i></p>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+    <!--intro viz-->
+    <div class="section w3-container w3-padding-32">
+      <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">What percent of Harvard faculty do you think are listed as female?</h3>
+      <h4 class="instruction">Hover over the icons to highlight them and click the number out of 10 Harvard faculty you think are female.</h4>
+      <div class="w3-row-padding row">
+        <div id="interactive-introduction">
+          <fieldset class="rating" id="guess">
+            <input type="radio" id="10" name="rating" value="10" />
+            <label class="full" for="10" title="100%"></label>
+            <input type="radio" id="9" name="rating" value="9" />
+            <label class="full" for="9" title="90%"></label>
+            <input type="radio" id="8" name="rating" value="8" />
+            <label class="full" for="8" title="80%"></label>
+            <input type="radio" id="7" name="rating" value="7" />
+            <label class="full" for="7" title="70%"></label>
+            <input type="radio" id="6" name="rating" value="6" />
+            <label class="full" for="6" title="60%"></label>
+            <input type="radio" id="5" name="rating" value="5" />
+            <label class="full" for="5" title="50%"></label>
+            <input type="radio" id="4" name="rating" value="4" />
+            <label class="full" for="4" title="40%"></label>
+            <input type="radio" id="3" name="rating" value="3" />
+            <label class="full" for="3" title="30%"></label>
+            <input type="radio" id="2" name="rating" value="2" />
+            <label class="full" for="2" title="20%"></label>
+            <input type="radio" id="1" name="rating" value="1" />
+            <label class="full" for="1" title="10%"></label>
+          </fieldset>
+          <div class="rating" id="answer">
+            <br><br><br><br>
+            <br><br><br><br>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!--concentration-->
+    <div class="section w3-container w3-padding-32">
+      <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">Let's take a closer look by concentration.</h3>
+      <h4 class="instruction">In this sunburst diagram, the inner circle represents the 4 major divisions of Harvard's faculty of Arts & Sciences.  The outer circle represents concentrations within these divisions.<br>
+        Hover over the individual segments to explore the number of female faculty as well as gender trends across faculty positions for each concentration and division.</h4>
+      <br>
+      <div class="w3-row-padding row">
+        <div class="col-md-6">
+          <div class="text-center" id="main">
+            <div id="chart">
+              <div id="explanation">
+                <span id="percentage"></span>
+                <br><p class="bigger">of faculty</p><p class="bigger"> are women</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" style="font-family:'Open Sans'">
+          <div id="sequence"></div>
+          <div class="w3-row-padding row"></div>
+          <input id="current_concentration" value="Overall" type="hidden">
+          <br><br><br><br>
+          <div class="col-md-3">
+            <div id="full_prof"></div>
+          </div>
+          <div class="col-md-3">
+            <div id="assoc_prof"></div>
+          </div>
+          <div class="col-md-3">
+            <div id="asst_prof"></div>
+          </div>
+          <div class="w3-row-padding row">
+            <div class="col-md-5">
+              <p style="font-size: 12px !important;">* Note: The numbers correspond with the number of faculty of the specified gender, position, and concentration. The numbers do not add up as there are other faculty positions not listed.</p>
+              <h3 style="text-align:center; font-weight: normal;">The number of female faculty exceeds that of male faculty in only <strong>6 concentrations</strong>.</h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div id="fullpage">
-
-      <div class="section" id="cover_photo">
-        <div>
-          <br><br><br>
-          <br><br><br>
-          <div id="cover-text">
-            <h1><b>W.O.W. Where are Our Women?</b></h1>
-            <h2 id="subtitle"><b><i>An exploration of female faculty at Harvard and beyond.</i></b></h2>
-            <h2>Take a look around your classroom.<br>
-              You will most likely see an even distribution between male and female students.<br>
-              But what about the professor lecturing in front?
-            </h2>
-          </div>
-
-        </div>
+    <!--wage gap-->
+    <div class="section">
+      <div class="w3-container w3-padding-32" id="wage_gap">
+        <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">And let's also take a look at differences in wages.</h3>
       </div>
-
-      <!--intro viz-->
-      <div class="section w3-container w3-padding-32">
-        <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">What percent of Harvard faculty do you think are listed as female?</h3>
-        <div class="w3-row-padding row">
-          <div id="interactive-introduction">
-            <fieldset class="rating" id="guess">
-              <input type="radio" id="10" name="rating" value="10" />
-              <label class="full" for="10" title="100%"></label>
-              <input type="radio" id="9" name="rating" value="9" />
-              <label class="full" for="9" title="90%"></label>
-              <input type="radio" id="8" name="rating" value="8" />
-              <label class="full" for="8" title="80%"></label>
-              <input type="radio" id="7" name="rating" value="7" />
-              <label class="full" for="7" title="70%"></label>
-              <input type="radio" id="6" name="rating" value="6" />
-              <label class="full" for="6" title="60%"></label>
-              <input type="radio" id="5" name="rating" value="5" />
-              <label class="full" for="5" title="50%"></label>
-              <input type="radio" id="4" name="rating" value="4" />
-              <label class="full" for="4" title="40%"></label>
-              <input type="radio" id="3" name="rating" value="3" />
-              <label class="full" for="3" title="30%"></label>
-              <input type="radio" id="2" name="rating" value="2" />
-              <label class="full" for="2" title="20%"></label>
-              <input type="radio" id="1" name="rating" value="1" />
-              <label class="full" for="1" title="10%"></label>
-            </fieldset>
-            <div class="rating" id="answer"></div>
-          </div>
-        </div>
-      </div>
-
-      <!--concentration-->
-      <div class="section w3-container w3-padding-32">
-        <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">Let's take a closer look by concentration:</h3>
-        <h4>In this sunburst diagram, the inner circle represents the four major divisions of Harvard's faculty of Arts & Sciences. The outer circle represents concentrations within these divisions. By hovering over the individual segments
-          you can explore the number of female faculty as well as gender trends across faculty positions for each concentration and division.</h4>
-        <br>
-        <div class="w3-row-padding row">
-          <div class="col-md-6">
-            <div class="text-center" id="main">
-              <div id="chart">
-                <div id="explanation">
-                  <span id="percentage"></span>
-                  <br><p class="bigger">of faculty</p><p class="bigger"> are women</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div id="sequence"></div>
-            <div class="w3-row-padding row"></div>
-            <input id="current_concentration" value="Overall" type="hidden">
-            <br><br><br><br>
-            <div class="col-md-3">
-              <div id="full_prof"></div>
-            </div>
-            <div class="col-md-3">
-              <div id="assoc_prof"></div>
-            </div>
-            <div class="col-md-3">
-              <div id="asst_prof"></div>
-            </div>
-            <div class="w3-row-padding row">
-              <div class="col-md-5">
-                <p>* Note: There are other type of faculty not listed.</p>
-                <h3 style="text-align:center">In only <strong>6</strong> concentrations are there more female than male faculty.</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--wage gap-->
-      <div class="section">
-        <div class="w3-container w3-padding-32" id="wage_gap">
-          <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">However, inequity continues even after women are hired...</h3>
-        </div>
-        <div class="w3-row-padding row">
-          <h3>Wage Gap Between Male and Female Professors at Harvard</h3>
-          <h4>Hover over the graph to see the difference in wages by gender. You can select the faculty position using the select box below.</h4>
-          <div class="row">
+      <div class="w3-row-padding row">
+        <h3>Wage Gap Between Male and Female Professors at Harvard</h3>
+        <div class="row">
+          <div class="col-md-3">
+            <br><br>
+            <h4 class="instruction">Hover over the graph to see the difference in wages by gender. You can select the faculty position using the select box below.</h4>
+            <h5 style="font-size: 12px !important;">* Note: Dotted line indicates that data is not available.</h5>
+            <br>
+            <div style="border: 1px solid #e25488; border-radius: 10px; padding: 10px; margin-right: 120px;">
             <div id="wagegap_selectbox">
               <!-- Select box to choose the ranking type -->
               <form class="form-inline">
@@ -162,130 +178,144 @@
                     <option value="assistant">Assistant Professors</option>
                     <option value="associate">Associate Professors</option>
                   </select>
-                  <!-- Parent container for the visualization -->
-                  <div id="vis1"></div>
                 </div>
               </form>
             </div>
+            </div>
+            <br><br><br><br><br>
+            <ul class="legend">
+              <li style="font-family: 'Open Sans'; font-size: 12px;"><strong><span class="male"></span>Average Male Faculty Wage</strong></li><br>
+              <li style="font-family: 'Open Sans'; font-size: 12px;"><strong><span class="female"></span>Average Female Faculty Wage</strong></li>
+            </ul>
+          </div>
+
+          <div class="col-md-8">
+            <div id="vis1"></div>
+
           </div>
         </div>
       </div>
+    </div>
 
-      <!--other schools-->
-      <div class="section">
-        <div class="w3-container w3-padding-32" id="other_schools">
-          <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">But this is not just a problem at Harvard.</h3>
-        </div>
+    <!--other schools-->
+    <div class="section">
+      <div class="w3-container w3-padding-32" id="other_schools">
+        <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">To examine this further, let's explore data from other Ivy League universities.</h3>
+      </div>
 
-        <div class="w3-row-padding row">
-          <h3>Female Faculty Percentage and Wage Across Ivy League Universities</h3>
-          <h4>Click on the map to see the percentage of female professors as well as wage difference on that campus.</h4>
-          <h5>Note: Wage difference was calculated by dividing female faculty wage by male faculty wage. These figures are based on 2015 data.</h5>
-          <div class="row">
-            <div class="col-md-6">
-              <div id="ivy-league-map"></div>
-            </div>
-            <div class="col-md-6">
-              <div id="ivy-league-bar-chart"></div>
-            </div>
+      <div class="w3-row-padding row">
+        <h3>Female Faculty Percentage and Wage Across Ivy League Universities</h3>
+        <h4 class="instruction">Click on the map to see the percentage of female professors as well as wage difference on that campus.</h4>
+        <h5 style="font-size: 12px; font-family: 'Open Sans';">* Note: Wage difference was calculated by dividing female faculty wage by male faculty wage. These figures are based on 2015 data.</h5>
+        <div class="row">
+          <div class="col-md-6">
+            <div id="ivy-league-map"></div>
+          </div>
+          <div class="col-md-6">
+            <div id="ivy-league-bar-chart"></div>
           </div>
         </div>
       </div>
+    </div>
 
+    <!--nationwide-->
+    <div class="section">
       <!--nationwide-->
-      <div class="section">
-        <!--nationwide-->
-        <div class="w3-container w3-padding-32" id="nationwide">
-          <h3 class="section-title 3-border-bottom w3-border-light-grey w3-padding-16">In fact, this is a nation-wide phenomenon.</h3>
-        </div>
-
-        <div class="w3-row-padding row card-between">
-          <div class="card-bg card-bg-pink">
-            <h3 class="sub-title">Women are underrepresented in academia.</h3>
-            <h4>Among faculty at all US universities in 2015, 49.1% of faculty at US universities were female, a percentage that
-              has rapidly grown from 33.2% in 1987. It is important to remember, however, that women are overrepresented
-              in lower-ranking academic positions.</h4>
-            <h4>While women represent over half (51.5%) of Assistant Professors and are near parity (44.9%) among Associate Professors,
-              they accounted for less than a third (32.4%) of Professors in 2015.</h4>
-          </div>
-          <div class="card-bg card-bg-blue">
-            <h3 class="sub-title">Men outearn women at all faculty levels.</h3>
-            <h4>At all categories of institutions, full professors who are women earned on average $98,524 a year compared to
-              $104,493 for their male colleagues in 2016–2017. That’s 94.3% of what men earned.</h4>
-            <h4>Nevertheless, it is clear that there is a greater imbalance at Ivy League Universities than at the average US
-              postsecondary institution
-            </h4>
-          </div>
-        </div>
+      <div class="w3-container w3-padding-32" id="nationwide">
+        <h3 class="section-title 3-border-bottom w3-border-light-grey w3-padding-16">This appears to be a nation-wide phenomenon.</h3>
       </div>
 
+      <div class="w3-row-padding row card-between">
+        <div class="card-bg">
+          <img src="img/raiseicon.png"  style="width: 80px; margin-left: 42.5%;">
+
+          <h3 class="sub-title">Women are underrepresented in academia, especially in higher-ranking positions.</h3>
+          <h4>It is important also to remember, however, that women are overrepresented in lower-ranking academic positions.</h4>
+          <h4>While women represent over half (51.5%) of Assistant Professors and are near parity (44.9%) among Associate Professors,
+            they accounted for less than a third (32.4%) of Professors in 2015.</h4>
+        </div>
+        <div class="card-bg">
+          <img src="img/dollaricon.png"  style="width: 80px; margin-left: 42.5%;">
+
+          <h3 class="sub-title">Men outearn women at all faculty levels.</h3>
+          <h4>At all categories of institutions, full professors who are women earned on average $98,524 a year compared to
+            $104,493 for their male colleagues in 2016–2017. That’s 94.3% of what men earned.</h4>
+          <h4>Nevertheless, it appears that there is a greater imbalance at Ivy League Universities than at the average US
+            postsecondary institution, according to the data in the preceding visualization.
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <!--timeline-->
+    <div class="section">
       <!--timeline-->
-      <div class="section">
-        <!--timeline-->
-        <div class="w3-container w3-padding-32" id="timeline_section">
-          <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">However, these problems are nothing new.</h3>
-        </div>
-
-        <div class="w3-row-padding row">
-          <div id="timelineIntro">
-            <h4>There has always been a gender imbalance among faculty at these institutions. Only centuries after their founding
-              did women become a part of their leadership.</h4>
-            <br>
-            <form class="form-inline">
-              <div class="form-group" id="school">
-                <label class="select-school" for="school">Select a school to explore a timeline of its history of female leadership relative to milestones for women
-                  in US history: </label>
-                <input type="checkbox" id="select-all" value="All">All</input>
-                <input type="checkbox" class="school-history" value="Harvard" size="25" checked>&ensp;Harvard</input>
-                <input type="checkbox" class="school-history" value="Yale">&ensp;Yale</input>
-                <input type="checkbox" class="school-history" value="Princeton">&ensp;Princeton</input>
-                <input type="checkbox" class="school-history" value="Brown">&ensp;Brown</input>
-                <input type="checkbox" class="school-history" value="Columbia">&ensp;Columbia</input>
-                <input type="checkbox" class="school-history" value="UPenn">&ensp;UPenn</input>
-                <input type="checkbox" class="school-history" value="Cornell">&ensp;Cornell</input>
-                <input type="checkbox" class="school-history" value="Dartmouth">&ensp;Dartmouth (data N/A due to publicly unavailable information)</input>
-              </div>
-            </form>
-            <br>
-          </div>
-          <div id="timelineStuff">
-            <div id="timeline"></div>
-            <div id="timeline-description-box"><div id="timeline-description"></div></div>
-          </div>
-          <p class="bottom-title">Hover over an event for a brief description; Click for more information.</p>
-        </div>
+      <div class="w3-container w3-padding-32" id="timeline_section">
+        <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">However, these problems are nothing new.</h3>
       </div>
 
-      <div class="section">
-        <!--<div class="w3-container w3-padding-32">-->
-          <div id="off" style="text-align: center"></div>
-        <!--</div>-->
+      <div class="w3-row-padding row">
+        <div id="timelineIntro">
+          <h4>There has always been a gender imbalance among faculty at these institutions. Only centuries after their founding
+            did women become a part of their leadership.</h4>
+          <h3>History of Female Leadership in Academia</h3>
+          <h4 class="select-school instruction">Select any school or combination of schools to explore a timeline of its history of female leadership relative to milestones for women
+            in US history.<br>Hover over an event (represented by each circle) for a brief description. Click for more information.</h4>
+          <br>
+          <form class="form-inline">
+            <div class="form-group" id="school" style="text-align: center;">
+              <input type="checkbox" id="select-all" value="All">All</input>
+              <input type="checkbox" class="school-history" value="Harvard" size="25" checked>&ensp;Harvard</input>
+              <input type="checkbox" class="school-history" value="Yale">&ensp;Yale</input>
+              <input type="checkbox" class="school-history" value="Princeton">&ensp;Princeton</input>
+              <input type="checkbox" class="school-history" value="Brown">&ensp;Brown</input>
+              <input type="checkbox" class="school-history" value="Columbia">&ensp;Columbia</input>
+              <input type="checkbox" class="school-history" value="UPenn">&ensp;UPenn</input>
+              <input type="checkbox" class="school-history" value="Cornell">&ensp;Cornell</input>
+              <div id="dartmouth-text"><input type="checkbox" class="school-history" value="Dartmouth" disabled="disabled">Dartmouth (data N/A)</input></div>
+            </div>
+          </form>
+          <br>
+        </div>
+        <div id="timelineStuff">
+          <div id="timeline"></div>
+          <div id="timeline-description-box"><div id="timeline-description"></div></div>
+        </div>
+        <!--<p class="bottom-title">Hover over an event for a brief description; Click for more information.</p>-->
       </div>
+    </div>
 
+    <!--<div class="section">-->
+    <!--&lt;!&ndash;<div class="w3-container w3-padding-32">&ndash;&gt;-->
+    <!--<div id="off" style="text-align: center"></div>-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--</div>-->
+
+    <!--responses-->
+    <div class="section">
       <!--responses-->
-      <div class="section">
-        <!--responses-->
-        <div class="w3-container w3-padding-32" id="responses">
-          <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">So how do people at Harvard feel about all this?
-            <em>And what now?</em>
-          </h3>
-        </div>
+      <div class="w3-container w3-padding-32" id="responses">
+        <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">The data shows that something is off.  So how do people at Harvard feel about all this?
+          <em>And what now?</em>
+        </h3>
+      </div>
 
-        <div class="w3-row-padding row">
-          <h4>An overwhelming majority already understand that there is a gender imbalance among Harvard faculty. As it stands,
-            this is 86.1% of those who responded to our survey.</h4>
-          <h4>Here are some of their thoughts:</h4>
-
+      <div class="w3-row-padding row">
+        <h4>An overwhelming majority understand that there is a gender imbalance among Harvard faculty. As it stands,
+          this is 86.1% of those who responded to our survey.</h4>
+        <h4>Here are some of their thoughts:</h4>
+        <br><br>
+        <div id="qna">
           <div class="row" id="questions">
             <div class="col-md-6">
-              <h3 class="sub-title-2">
+              <h3 class="sub-title-2" style="margin-right: 10px">
                 If you believe that there indeed is a gender imbalance, why do you believe this is the case? What can be attributed to this
                 imbalance?
               </h3>
             </div>
 
             <div class="col-md-6">
-              <h3 class="sub-title-2">
+              <h3 class="sub-title-2" style="margin-right: 10px">
                 If you believe that there indeed is a gender imbalance, how do you think this imbalance can be mitigated? What, if anything,
                 do you think Harvard is already doing to address this?
               </h3>
@@ -294,7 +324,7 @@
 
           <div class="row" id="carousels">
             <div class="col-md-6">
-              <div id="carousel1" class="carousel car-right-line" data-ride="carousel" data-interval="5000" style="padding: 0px 45px;">
+              <div id="carousel1" class="carousel" data-ride="carousel" data-interval="7500" style="padding: 0px 35px; margin-right: 50px;">
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
@@ -358,7 +388,7 @@
             </div>
 
             <div class="col-md-6">
-              <div id="carousel2" class="carousel car-right-line" data-ride="carousel" data-interval="5000" style="padding: 0 45px;">
+              <div id="carousel2" class="carousel" data-ride="carousel" data-interval="7500" style="padding: 0 35px; margin-right: 50px;">
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
@@ -383,7 +413,7 @@
                       be any case of sexual harassment, the University should have no tolerance for such behavior."</p>
                   </div>
                   <div class="item">
-                    <p>"Better childcare policies and less harassment</p>
+                    <p>"Better childcare policies and less harassment"</p>
                   </div>
                   <div class="item">
                     <p>"Actively recruit women to enter the pipeline to professorship and ensure that current female professors'
@@ -418,80 +448,133 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <!--survey-->
-      <div class="section w3-container w3-padding-32">
-        <div class="row" id="survey">
-          <div>
-            <p class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">
-              <i>Now tell us how YOU feel!</i>
-            </p>
-          </div>
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfcvNGuVIzgpi5ee3PJ6rGbPi0TwhXI0LWw6TFDjAsXlstGrQ/viewform?embedded=true#responses"
-            width="1000" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    <!--survey-->
+    <div class="section w3-container w3-padding-32">
+      <div class="row" id="survey">
+        <div>
+          <br>
+          <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">
+            <i>Now tell us how YOU feel!</i>
+          </h3>
         </div>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfcvNGuVIzgpi5ee3PJ6rGbPi0TwhXI0LWw6TFDjAsXlstGrQ/viewform?embedded=true#responses"
+                width="1000" height="550" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
       </div>
+    </div>
 
+    <!--about-->
+    <div class="section w3-container w3-padding-32 last-section">
       <!--about-->
-      <div class="section w3-container w3-padding-32last-section">
-        <!--about-->
-        <div class="w3-container" id="about">
-          <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">About this Project</h3>
+      <div class="w3-container" id="about">
+        <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">About this Project</h3>
+      </div>
+    <div class="w3-row w3-padding-32">
+      <div class="col-md-6">
+        <div class="w3-row">
+          <h4>Our Team</h4>
+          <div style="width: 80%; margin-left: 11%">
+            <div class="w3-third" style="text-align: center">
+              <img src="img/Yanni_pic.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:80%; border-radius: 100%;">
+              <h4>Yanni Cho</h4>
+              <h5>Yanni is a sophomore in Lowell concentrating in Neurobiology.</h5>
+            </div>
+            <div class="w3-third" style="text-align: center">
+              <img src="img/Rachel_pic.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:80%; border-radius: 100%;">
+              <h4>Rachel Kang</h4>
+              <h5>Rachel is a sophomore in Lowell concentrating in Computer Science.</h5>
+            </div>
+            <div class="w3-third" style="text-align: center">
+              <img src="img/Haixing_pic.jpg" class="w3-round" alt="Random Name" style="width:80%; border-radius: 100%;">
+
+              <h4><br>Haixing Yin</h4>
+              <h5>Haixing is a first year graduate student in the CSE program.</h5>
+            </div>
+          </div>
         </div>
 
-        <div class="row note-container">
-          <div class="web-note">
-            <i></i> project was completed by Yanni Cho, Rachel Kang, and Haixing Yin.</div>
-          <div class="web-note">
-            <i></i>To learn more about how this project came to be, and to see where our data/information comes from, please
-            take a look at our process book
-            <a href="https://docs.google.com/a/college.harvard.edu/document/d/1O4JA_4TIy3m5wa6vvIA7Lxxx8vBbGnX27z5FPNPiXsE/edit?usp=sharing">here</a>.</div>
-
-          <div class="web-note">
-            <i></i>
-            <span>Note: </span>We would like to take special note to address that the gender-binary nature of this project is based
+        <div class="w3-row">
+          <h4>Notes</h4>
+          <h5>1. We would like to take special note to address that the gender-binary nature of this project is based
             merely on the data/information we were able to find in the time we had provided to work on this project. The
             lack of data concerning nonbinary gender identities is a serious issue that reflects the gravity of the problem.
-            Due to the lack of data on this and due to our focus on women, however, this was not given the attention needed.
-          </div>
-          <div class="web-note">
-            <i></i>
-            <span>Note: </span>Our visualizations are based on publicly available data and information; any and all potential errors
-            reflect those of these online resources.</div>
-          <br>
+            Due to the lack of data on this and due to our focus on women, however, this was not given the attention needed.</h5>
+          <h5>2. Our visualizations are based on publicly available data and information; any and all potential errors
+            reflect those of these online resources.</h5>
         </div>
-        <p class="bottom-title">Please reach out to us if you have any questions or concerns, and thank you for visiting our site!</p>
       </div>
 
+      <div class="col-md-6">
+        <div class="w3-row">
+          <h4>References</h4>
+          <ol id="reference_list" style="font-size: 12px;">
+            <li>The gender ratio of Harvard faculty for each concentration was obtained from the <a href = "https://medium.com/harvard-open-data-project/gender-disparity-in-harvard-faculty-b253ae949a56">Harvard Open Data project</a>.</li>
+            <li>The wage difference of Harvard faculty as well as other Ivy League university faculty was from <a href="https://data.chronicle.com/166027/Harvard-University/faculty-salaries/">Chronicle Data</a>.</li>
+            <li>Data about the faculty gender ratio of each Ivy League university was obtained from information released by each school.
+              (<a href="https://www.brown.edu/about/facts/faculty-and-employees">Brown University</a>,
+              <a href="http://www.columbia.edu/cu/opir/abstract/opir_faculty_gender_1.html">Columbia University</a>,
+              <a href="http://diversity.cornell.edu/sites/default/files/uploaded-files/Cornell%20University%202016%20Inclusion%20Report.pdf">Cornell University</a>,
+              <a href="https://www.dartmouth.edu/~oir/data-reporting/factbook/faculty.html">Dartmouth College</a>,
+              <a href="https://diversity.upenn.edu/diversity-at-penn/facts-and-figures#faculty">University of Pennsylvania</a>,
+              <a href="https://inclusive.princeton.edu/about/demographics">Princeton University</a>,
+              <a href="https://faculty.yale.edu/faculty-demographics">Yale University</a>)
+            </li>
+            <li>National data found from an article called
+              <a href="http://onlinelibrary.wiley.com.ezp-prod1.hul.harvard.edu/doi/10.1111/soc4.12372/full">"Gender Inequality Across the Academic Life Course"</a> and
+              <a href="http://www.catalyst.org/knowledge/women-academia">Catalyst</a>.
+            </li>
+            <li>Timeline data was found from the following sources:
+              <a href= “https://faculty.harvard.edu/files/fdd/files/timeline-final_32.pdf” >Harvard University Faculty Development & Diversity</a>,
+              <a href= “https://visitorcenter.yale.edu/book/women-faculty-forum”>Yale University Visitor Center</a>,
+              <a href= “https://president.yale.edu/about/past-presidents”>Yale University Office of the President</a>,
+              <a href= “https://princetoniana.princeton.edu/history/women”>Princetoniana</a>,
+              <a href= “https://blogs.princeton.edu/mudd/2014/11/history-of-women-at-princeton-university/”>Princeton University Mudd Manuscript Library Blog</a>,
+              <a href= “https://www.brown.edu/research/pembroke-center/sites/brown.edu.research.pembroke-center/files/uploads/87306_Timeline.pdf”>Brown University Pembroke Center</a>,
+              <a href= “http://c250.columbia.edu/c250_events/symposia/history_women_timeline.html#1900”>Columbia 250</a>,
+              <a href= “http://www.archives.upenn.edu/histy/features/women/chrontext.html”>University of Pennsylvania University Archives and Records Center</a>, and
+              <a href= “https://150.cornell.edu/timelines”>Cornell University 150</a>.
+            </li>
+            <li>Responses were collected from a survey we sent out to Harvard students and faculty.</li>
+          </ol>
+        </div>
+
+        <h4>More on this project</h4>
+        <h5>This project was created as a final project for CS171. To learn more about how this project came to be, and to see where our data/information comes from, please
+          take a look at our process book
+          <a href="CS 171 Final Project Process Book.pdf" target="_blank">here</a>.</h5>
+      </div>
     </div>
+
+  </div>
   </div>
 
-  <!-- Load JS libraries -->
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/leaflet.js"></script>
-  <script src="js/queue.v1.min.js"></script>
-  <script src="js/d3.js"></script>
-  <script src="js/d3-tip.js"></script>
-  <script src="https://d3js.org/d3.v4.min.js"></script>
-  <script type="text/javascript">
+<!-- Load JS libraries -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/leaflet.js"></script>
+<script src="js/queue.v1.min.js"></script>
+<script src="js/d3.js"></script>
+<script src="js/d3-tip.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script type="text/javascript">
     // Hack to make this example display correctly in an iframe on bl.ocks.org
     d3.select(self.frameElement).style("height", "700px");
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.0/d3-legend.js"></script>
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.0/d3-legend.js"></script>
 
-  <!-- Visualization objects -->
-  <script src="js/barChart.js"></script>
-  <script src="js/IvyLeagueMap.js"></script>
-  <script type="text/javascript" src="js/sequences.js"></script>
+<!-- Visualization objects -->
+<script src="js/barChart.js"></script>
+<script src="js/IvyLeagueMap.js"></script>
+<script type="text/javascript" src="js/sequences.js"></script>
 
-  <!-- Load data, create visualizations -->
-  <script src="js/main.js"></script>
+<!-- Load data, create visualizations -->
+<script src="js/main.js"></script>
 
-  <!-- Load data, create visualizations -->
-  <script src="js/piechart.js"></script>
-  <script src="js/wagegap.js"></script>
-  <script src="js/timeline.js"></script>
-  <script src="js/off.js"></script>
+<!-- Load data, create visualizations -->
+<script src="js/piechart.js"></script>
+<script src="js/wagegap.js"></script>
+<script src="js/timeline.js"></script>
+<script src="js/off.js"></script>
 
 </body>
 </html>
