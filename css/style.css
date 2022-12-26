@@ -1,6 +1,6 @@
 /*General*/
 body {
-    background-color: #ffe7e7 !important;
+    background-color: #f6f2eb !important;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -17,7 +17,7 @@ h1 .sub-headline {
 h3 {
     font-family: "Open Sans";
     font-weight: 900;
-    color: #e25488;
+    color: #504230;
 }
 
 h4 {
@@ -68,7 +68,7 @@ h5 {
 
 #cover-text h1 {
     font-size: 75px;
-    color: #e25488;
+    color: #e37439;
 }
 
 #cover-text #subtitle {
@@ -85,7 +85,7 @@ h5 {
 
 /*Nav Bar*/
 .w3-white {
-    background-color: #e25488 !important;
+    background-color: #504230 !important;
 }
 
 .w3-button {
