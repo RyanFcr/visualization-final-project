@@ -100,3 +100,57 @@ IvyLeagueMap.prototype.updateVis = function() {
         vis.markerLayer.addLayer(vis.marker);
     })
 };
+
+function displayBarChart(event) {
+    // Get the bar chart element
+    var chart = document.getElementById("bar-chart");
+  
+    // Make the chart visible
+    chart.style.display = "block";
+  
+    // Create the bar chart using D3.js or Chart.js
+    // (code for creating the chart goes here)
+    // Set the dimensions of the chart
+  var width = 500;
+  var height = 500;
+
+  // Set the data for the chart
+  var data = [
+    { label: "Category 1", value: 50 },
+    { label: "Category 2", value: 25 },
+    { label: "Category 3", value: 75 }
+  ];
+
+  // Create a scale to map the data values to the height of the bars
+  var yScale = d3.scaleLinear()
+    .domain([0, d3.max(data, function(d) { return d.value; })])
+    .range([height, 0]);
+
+  // Create an SVG element to contain the chart
+  var svg = d3.select("#bar-chart")
+    .append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+  // Create the bars
+  svg.selectAll("rect")
+    .data(data)
+    .enter()
+    .append("rect")
+    .attr("x", function(d, i) { return i * (width / data.length); })
+    .attr("y", function(d) { return yScale(d.value); })
+    .attr("width", width / data.length - 10)
+    .attr("height", function(d) { return height - yScale(d.value); });
+}
+
+  
+  // Add event listeners to the images
+  var image1 = document.getElementById("image1");
+  image1.addEventListener("click", displayBarChart);
+  
+  var image2 = document.getElementById("image2");
+  image2.addEventListener("click", displayBarChart);
+  
+  var image3 = document.getElementById("image3");
+  image3.addEventListener("click", displayBarChart);
+  
