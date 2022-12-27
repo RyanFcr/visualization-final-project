@@ -9,6 +9,8 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/echarts.min.js"></script>
   <script src="js/jquery.fullPage.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.2.2/echarts.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
   <!-- 引入 vintage 主题 -->
   <script src="js/essos.js"></script>
   <title>W.O.W.</title>
@@ -198,11 +200,13 @@
         <h5 style="font-size: 12px; font-family: 'Open Sans';">* Note: Wage difference was calculated by dividing female faculty wage by male faculty wage. These figures are based on 2015 data.</h5>
         <div class="row">
           <div class="col-md-6">
-            <div id="ivy-league-map"></div>
+            <!-- <div id="ivy-league-map"></div> -->
           </div>
-          <div class="col-md-6">
+          <div id="final" style="position:relative;left:670px;top:0px;width:800px;height:600px;"></div>
+          <script src="js/final.js"></script>
+          <!-- <div class="col-md-6">
             <div id="ivy-league-bar-chart"></div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
