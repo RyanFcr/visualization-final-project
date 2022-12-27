@@ -58,14 +58,14 @@ var option = {
         {
         name: 'FG3_PCT : Three Point Percentage',
         type: 'line',
-        stack: 'Total',
+        // stack: 'Total',
         smooth: true,
         lineStyle: {
           width: 0
         },
         showSymbol: false,
         areaStyle: {
-          opacity: 0.8,
+          opacity: 1,
           color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
             {
               offset: 0,
@@ -85,14 +85,14 @@ var option = {
       {
         name: 'FG3A : Three Pointers Attempted',
         type: 'line',
-        stack: 'Total',
+        // stack: 'Total',
         smooth: true,
         lineStyle: {
           width: 0
         },
         showSymbol: false,
         areaStyle: {
-          opacity: 0.8,
+          opacity: 1,
           color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
             {
               offset: 0,
@@ -112,14 +112,14 @@ var option = {
       {
         name: 'FG3M : Three Pointers Made',
         type: 'line',
-        stack: 'Total',
+        // stack: 'Total',
         smooth: true,
         lineStyle: {
           width: 0
         },
         showSymbol: false,
         areaStyle: {
-          opacity: 0.8,
+          opacity: 1,
           color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
             {
               offset: 0,
