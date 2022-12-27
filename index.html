@@ -43,7 +43,7 @@
       <!-- Float links to the right. Hide them on small screens -->
       <div class="w3-right w3-hide-small">
         <a href="#firstPage" class="w3-bar-item w3-button">Pioneer</a>
-        <a href="#secondPage" class="w3-bar-item w3-button">Concentration</a>
+        <a href="#secondPage" class="w3-bar-item w3-button">Trend</a>
         <a href="#thirdPage" class="w3-bar-item w3-button">Wage</a>
         <a href="#fourthPage" class="w3-bar-item w3-button">Other Ivy Leagues</a>
         <a href="#fifthPage" class="w3-bar-item w3-button">Nationwide</a>
@@ -93,7 +93,7 @@
             <!--div id="ivy-league-map"-->
             <img src="img/stephen_curry.png">
           </div>
-          <div id="curry" style="position:relative;left:600px;top:3·0px;width:750px;height:500px;"></div>
+          <div id="curry" style="position:relative;left:600px;top:30px;width:750px;height:500px;"></div>
           <script src="js/curry.js"></script>  
           <!-- <div class="col-md-6">
             <div id="ivy-league-bar-chart"></div>
@@ -102,45 +102,15 @@
       </div>
     </div>
 
-    <!--concentration-->
+    <!--Trend-->
     <div class="section w3-container w3-padding-32">
       <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">Let's take a closer look by concentration.</h3>
       <h4 class="instruction">In this sunburst diagram, the inner circle represents the 4 major divisions of Harvard's faculty of Arts & Sciences.  The outer circle represents concentrations within these divisions.<br>
         Hover over the individual segments to explore the number of female faculty as well as gender trends across faculty positions for each concentration and division.</h4>
       <br>
-      <div class="w3-row-padding row">
-        <div class="col-md-6">
-          <div class="text-center" id="main">
-            <div id="chart">
-              <div id="explanation">
-                <span id="percentage"></span>
-                <br><p class="bigger">of faculty</p><p class="bigger"> are women</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6" style="font-family:'Open Sans'">
-          <div id="sequence"></div>
-          <div class="w3-row-padding row"></div>
-          <input id="current_concentration" value="Overall" type="hidden">
-          <br><br><br><br>
-          <div class="col-md-3">
-            <div id="full_prof"></div>
-          </div>
-          <div class="col-md-3">
-            <div id="assoc_prof"></div>
-          </div>
-          <div class="col-md-3">
-            <div id="asst_prof"></div>
-          </div>
-          <div class="w3-row-padding row">
-            <div class="col-md-5">
-              <p style="font-size: 12px !important;">* Note: The numbers correspond with the number of faculty of the specified gender, position, and concentration. The numbers do not add up as there are other faculty positions not listed.</p>
-              <h3 style="text-align:center; font-weight: normal;">The number of female faculty exceeds that of male faculty in only <strong>6 concentrations</strong>.</h3>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div id="trend3P" style="position:relative;left:300px;top:30px;width:750px;height:500px;"></div>
+      <script src="js/trend3P.js"></script> 
+     
     </div>
 
     <!--wage gap-->
