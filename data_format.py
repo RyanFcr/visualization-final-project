@@ -1,4 +1,4 @@
-f1 = open('./data/championsdata.csv', 'r')
+f1 = open('./data/runnerupsdata.csv', 'r')
 f2 = open('final.txt', 'a')
 firstline = f1.readline()
 att_name = firstline.split(',')
