@@ -53,7 +53,7 @@ h5 {
 
 /*Cover/Title Section*/
 #cover_photo {
-    background-image: url("../img/cover.jpg");
+    background-image: url("../img/owen.gif");
     height: 100%;
     width: 160%;
     background-position: center;
@@ -72,7 +72,7 @@ h5 {
 }
 
 #cover-text #subtitle {
-    color: gray;
+    color: rgb(132, 46, 6);
     font-size: 40px;
 }
 
@@ -80,6 +80,7 @@ h5 {
     font-family: "Open Sans";
     font-size: 24px;
     line-height: 1.5;
+    color: rgb(244, 238, 235);
 }
 
 
@@ -93,9 +94,9 @@ h5 {
 }
 
 .w3-button:hover {
-    color: lightpink !important;
+    color: rgb(255, 255, 255) !important;
     font-weight: bold;
-    background-color: #e25488 !important;
+    background-color: #d57a47 !important;
 }
 
 .w3-padding-32 {
@@ -148,7 +149,7 @@ fieldset, label {
 .rating > input:checked ~ label, /* show gold star when clicked */
 .rating:not(:checked) > label:hover, /* hover current star */
 .rating:not(:checked) > label:hover ~ label {
-    color: #e25488;  } /* hover previous stars in list */
+    color: #d57a47;  } /* hover previous stars in list */
 
 .rating > input:checked + label:hover, /* hover current star when changing rating */
 .rating > input:checked ~ label:hover,
@@ -160,7 +161,7 @@ fieldset, label {
 }
 
 .female{
-    color: #e25488;
+    color: #d57a47;
     width:60px;
 }
 
@@ -191,12 +192,12 @@ fieldset, label {
 .legend li { float: left; margin-right: 10px; }
 .legend span { border: 1px solid; float: left; width: 12px; height: 12px; margin: 2px; }
 /* your colors */
-.legend .female { background-color: #e25488; margin-right: 5px; }
+.legend .female { background-color: #d57a47; margin-right: 5px; }
 .legend .male { background-color: #58adf2; margin-right: 5px;  }
 
 
 .form-control {
-    background-color: #e25488 !important;
+    background-color: #d57a47 !important;
     color: white !important;
     border: none !important;
 }
@@ -220,7 +221,7 @@ fieldset, label {
     font-family: "Open Sans";
     font-size: 18px;
     font-weight: bold;
-    fill: #e25488;
+    fill: #d57a47;
 }
 
 
@@ -232,7 +233,7 @@ fieldset, label {
 
 
 #school-history {
-    background-color: #e25488;
+    background-color: #d57a47;
 }
 
 #dartmouth-text {
@@ -256,7 +257,7 @@ fieldset, label {
     position: absolute;
     padding: 10px;
     color: white;
-    background-color: #e25488;
+    background-color: #d57a47;
     border-radius: 5px;
 }
 
@@ -273,7 +274,7 @@ fieldset, label {
     text-align: center;
     display: none;
     padding: 15px;
-    border: 3px solid #e25488;
+    border: 3px solid #d57a47;
     border-radius: 20px;
     font-family: "Open Sans";
 }
@@ -296,7 +297,7 @@ fieldset, label {
 }
 
 #qna {
-    border: 3px solid #e25488;
+    border: 3px solid #d57a47;
     border-radius: 20px;
 }
 
@@ -343,11 +344,11 @@ fieldset, label {
 }
 
 a {
-    color: #e25488;
+    color: #d57a47;
 }
 
 a:hover {
-    color: #e25488;
+    color: #d57a47;
 }
 
 

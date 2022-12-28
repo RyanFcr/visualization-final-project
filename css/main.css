@@ -66,7 +66,7 @@ header {
   left: -10%;
   width: 120%;
   height: 1px;
-  background: #e25488;
+  background: #d57a47;
   transform:scaleY(0.5);
   content: "";
   bottom: 0;
@@ -78,7 +78,7 @@ header {
   margin-top: 10px;
 }
 .sub-title {
-  color: #e25488;
+  color: #d57a47;
   text-align: left;
 }
 .card-bg {
@@ -87,7 +87,7 @@ header {
   line-height: 30px;
   padding: 20px;
   margin-top: 40px;
-  border: 3px solid #e25488;
+  border: 3px solid #d57a47;
   border-radius: 50px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -105,8 +105,8 @@ header {
   color: #505050;
   font-size: 18px;
   text-align: left;
-  border-left: 5px solid #e25488;
-  border-right: 5px solid #e25488;
+  border-left: 5px solid #d57a47;
+  border-right: 5px solid #d57a47;
   background: #fff;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
   display: inline-block;
@@ -183,7 +183,7 @@ header {
 }
 
 #ivy-league-map {
-  border: 1px solid #e25488;
+  border: 1px solid #d57a47;
   border-radius: 50px;
 }
 #ivy-league-bar-chart {

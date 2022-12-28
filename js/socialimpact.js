@@ -237,8 +237,7 @@ const data25 = [
    { name: 'Salary1', index: 2, text: 'Salary(Millions)' },
    { name: 'Favourite', index: 3, text: 'Twitter Favourite Count' },
    { name: 'Retweet', index: 4, text: 'Retweet Count' },
-   { name: 'Salary', index: 5, text: 'Salary（Millions）' },
-   { name: 'player_name', index: 6, text: 'Player Name' }
+   { name: 'player_name', index: 5, text: 'Player Name' }
  ];
  const itemStyle = {
    opacity: 0.8,
@@ -251,7 +250,7 @@ var option = {
    color: ['#b34138', '#fec42c', '#80F1BE'],
    legend: {
      top: 10,
-     data: ['<25', '25-30', '>30'],
+     data: ['age<25', 'age in 25-30', 'age>30'],
      textStyle: {
        fontSize: 16
      }
@@ -270,11 +269,11 @@ var option = {
        return '<div style="border-bottom: 1px solid rgba(255,255,255,.3); font-size: 18px;padding-bottom: 7px;margin-bottom: 7px">'
                  + '3-Pointer Ball Attempted : ' + value[0]
                  + '</div>'
-                 + schema[1].text + '：' + value[1] + '<br>'
-                 + schema[2].text + '：' + value[2] + '<br>'
-                 + schema[3].text + '：' + value[3] + '<br>'
-                 + schema[4].text + '：' + value[4] + '<br>'
-                 + schema[5].text + '：' + value[5] + '<br>';
+                 + schema[1].text + ':' + value[1] + '<br>'
+                 + schema[2].text + ':' + value[2] + '<br>'
+                 + schema[3].text + ':' + value[3] + '<br>'
+                 + schema[4].text + ':' + value[4] + '<br>'
+                 + schema[5].text + ':' + value[5] + '<br>';
      }
    },
    xAxis: {
@@ -358,21 +357,21 @@ var option = {
    ],
    series: [
      {
-       name: '<25',
+       name: 'age<25',
        type: 'effectScatter',
        symbolSize: 17,
        itemStyle: itemStyle,
        data: data25
      },
      {
-       name: '25-30',
+       name: 'age in 25-30',
        type: 'effectScatter',
        symbolSize: 16,
        itemStyle: itemStyle,
        data: data30
      },
      {
-       name: '>30',
+       name: 'age>30',
        type: 'effectScatter',
        symbolSize: 15,
        itemStyle: itemStyle,
