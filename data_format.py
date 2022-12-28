@@ -1,11 +1,11 @@
-f1 = open('./data/runnerupsdata.csv', 'r')
+f1 = open('./data/3PP.csv', 'r')
 f2 = open('final.txt', 'a')
 firstline = f1.readline()
 att_name = firstline.split(',')
 # f2.write('[\'Date\',\'FG3A\'],\n')
 for line in f1.readlines()[::]:
     token = line.split(',')
-    sdate = token[att_name.index('TPA')]
+    sdate = token[att_name.index('lose')]
     # f2.write('\"')
     f2.write(sdate+',')
     # f2.write(token[att_name.index('FG3A')])
