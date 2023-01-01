@@ -247,7 +247,7 @@ const data25 = [
    shadowColor: 'rgba(0,0,0,0.3)'
  };
 var option = {
-   color: ['#b34138', '#fec42c', '#80F1BE'],
+   color: ['#d95850', '#eb8146', '#ffb248'],
    legend: {
      top: 10,
      data: ['age<25', 'age in 25-30', 'age>30'],

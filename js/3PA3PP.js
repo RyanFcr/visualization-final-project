@@ -10,7 +10,7 @@ option = {
     trigger: 'axis'
   },
   legend: {
-    data: ['3PA_Win', '3PA_Lose', '3PP_Win', '3PP_Lose']
+    data: ['3PA_Win', '3PA_Lose', '3P%_Win', '3P%_Lose']
   },
   grid: {
     left: '3%',
@@ -68,7 +68,7 @@ option = {
       ]
     },
     {
-      name: '3PP_Win',
+      name: '3P%_Win',
       type: 'line',
       data: [
         37.57, 38.42, 38.45, 38.03, 38.32, 38.35, 38.02, 37.96, 37.45, 38.21,
@@ -76,7 +76,7 @@ option = {
       ]
     },
     {
-      name: '3PP_Lose',
+      name: '3P%_Lose',
       type: 'line',
       data: [
         30.2, 31.24, 31.22, 31.45, 31.65, 32.43, 31.39, 31.65, 31.47, 31.75,

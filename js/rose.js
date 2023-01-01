@@ -1,13 +1,13 @@
 var myChart = echarts.init(document.getElementById('rose'),'essos');
 var option = {
     title: {
-      text: '3P percentage V.S. age',
+      text: '3 Pointer Ball fraction V.S. age',
       subtext: 'The percentage of threes among different ages players',
       left: 'center'
     },
     tooltip: {
       trigger: 'item',
-      formatter: '{a} <br/>{b} : {c} ({d}%)'
+      formatter: '{a} <br/>{b} : {c}'
     },
     legend: {
       left: 'center',

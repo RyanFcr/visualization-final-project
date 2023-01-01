@@ -124,7 +124,7 @@
             inRange: {
               color: (function () {
                 // prettier-ignore
-                var colors = ['#d95850', '#eb8146', '#ffb248', '#f2d643', '#ebdba4', '#893448', '#d95850', '#893448', '#91c4c5', '#6890ba'];
+                var colors = ['#d95850', '#eb8146', '#ffb248', '#f2d643', '#ebdba4', '#893448', '#d95850', '#d95850', '#d95850', '#d95850'];
                 return colors.concat(colors);
               })()
             }

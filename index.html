@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/jquery.fullPage.css">
   <script src="js/jquery.min.js"></script>
@@ -26,17 +26,17 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
   <script>
       $(function () {
           $('#fullpage').fullpage({
-              anchors: ["cover","firstPage", 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage',"eighthPage", 'lastPage'],
+              anchors: ["cover","firstPage", 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'lastPage'],
           });
       });
   </script>
 </head>
 
-<body style="width: 100%;background:#f6f2eb">
+<body style="width: 100%;background: #f4f1e6">
 
 <div class="main-container">
   <div class="w3-top">
@@ -46,12 +46,11 @@
       <div class="w3-right w3-hide-small">
         <a href="#firstPage" class="w3-bar-item w3-button">Pioneer</a>
         <a href="#secondPage" class="w3-bar-item w3-button">Trend</a>
-        <a href="#thirdPage" class="w3-bar-item w3-button">3PA3PP</a>
+        <a href="#thirdPage" class="w3-bar-item w3-button">3Pointer</a>
         <a href="#fourthPage" class="w3-bar-item w3-button">Finals</a>
         <a href="#fifthPage" class="w3-bar-item w3-button">Social Impact</a>
-        <a href="#sixthPage" class="w3-bar-item w3-button">Timeline</a>
+        <a href="#sixthPage" class="w3-bar-item w3-button">Positions</a>
         <a href="#seventhPage" class="w3-bar-item w3-button">Age</a>
-        <a href="#eighthPage" class="w3-bar-item w3-button">Survey</a>
         <a href="#lastPage" class="w3-bar-item w3-button">About</a>
       </div>
     </div>
@@ -87,47 +86,56 @@
       </div>
 
       <div class="w3-row-padding row">
-        <h3>Stephen Curry</h3>
-        <h4 class="instruction">Click on the portraits to see the 3-points ball shots data of every idol.</h4>
-        <h5 style="font-size: 12px; font-family: 'Open Sans';">* Note: Wage difference was calculated by dividing female faculty wage by male faculty wage. These figures are based on 2015 data.</h5>
+        <h3>Stephen Curry , A three-pointer-kicking idol, a legendary figure</h3>
+        <h4 class="instruction">Click on the chart to see the 3-pointer ball shots data of Stephen Curry.</h4>
         <div class="row">
           <div class="col-md-6">
-            <!--div id="ivy-league-map"-->
-            <!-- <img src="img/stephen_curry.png"> -->
             <img src="img/curry9.png" style="position:absolute;left:230px;top:40px;width:500px;height:900px;">
-            <img src="img/curry8.png" style="position:absolute;left:0px;top:0px;width:500px;height:900px;">
-            <img src="img/curry7.png" style="position:absolute;left:-230px;top:0px;width:500px;height:900px;">
+            <img src="img/curry8.png" style="position:absolute;left:-10px;top:0px;width:500px;height:900px;">
+            <img src="img/curry7.png" style="position:absolute;left:-237px;top:5px;width:500px;height:900px;">
           </div>
           <div id="curry" style="position:relative;left:600px;top:30px;width:750px;height:500px;"></div>
           <script src="js/curry.js"></script>  
-          <!-- <div class="col-md-6">
-            <div id="ivy-league-bar-chart"></div>
-          </div> -->
         </div>
       </div>
     </div>
 
     <!--Trend-->
     <div class="section w3-container w3-padding-32">
-      <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">Let's take a closer look by concentration.</h3>
-      <h4 class="instruction">In this sunburst diagram, the inner circle represents the 4 major divisions of Harvard's faculty of Arts & Sciences.  The outer circle represents concentrations within these divisions.<br>
-        Hover over the individual segments to explore the number of female faculty as well as gender trends across faculty positions for each concentration and division.</h4>
-      <br>
-      <div id="trend3P" style="position:relative;left:300px;top:30px;width:750px;height:500px;"></div>
+      <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">Let's take a closer look into the 3-pointer ball trend!</h3> 
+      <h4 class="instruction">In this river diagram, the upper block represents the 3P% data in the 1980-2016 game seasons.<br> While the lower block represents the 3PA data along all the same historical seasons.</h4>
+      <h5>3PA : 3-pointer balls attempted  3P% : the percentage of 3-pointer balls scored by those attempted<h5>
+      <img src="img/barkeley.png" style="position:absolute;left:935px;top:250px;width:450px;height:550px;">
+      <img src="img/11.png" style="position:absolute;left:935px;top:70px;width:500px;height:300px;">
+      <div id="trend3P" style="position:relative;left:-20px;top:0px;width:900px;height:600px;"></div>
       <script src="js/trend3P.js"></script> 
-     
     </div>
 
-    <!--3PA3PP-->
+    <!--3Pointer-->
     <div class="section">
       <div class="w3-container w3-padding-32">
-        <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">And let's also take a look at differences in wages.</h3>
+        <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">Can 3-pointer help team win?</h3>
+        <h4 class="instruction">Hover on the dots to see 3PA and 3P% of team wins and lose in the finals between 2003-2020 .</h4>
       </div>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       <div class="w3-row-padding row">
-        <h3>Wage Gap Between Male and Female Professors at Harvard</h3>
-        <br><br><br><br><br><br><br><br>
-        <div id="3PA3PP" style="position:absolute;left:20px;top:200px;width: 1300px;height: 500px;"></div>
+
+      </div>
+
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <div class="w3-row-padding row">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img src="img/championship.png" style="position:absolute;left:0px;top:195px;width:500px;height:625px;">
+        <div id="3PA3PP" style="position:absolute;right:25px;top:220px;width: 930px;height: 600px;"></div>
         <script src="js/3PA3PP.js"></script>
       </div>
     </div>
@@ -144,79 +152,63 @@
         <div class="row">
           
           <div class="col-md-6">
-            <!--div id="ivy-league-map"-->
-            <!-- <img src="img/final.jpeg" width="650" height="450" > -->
           </div>
           <div id="final" style="position:relative;left:20px;top:0px;width: 1300px;height: 500px;"></div>
           <script src="js/final.js"></script>
-          <!-- <div class="col-md-6">
-            <div id="ivy-league-bar-chart"></div>
-          </div> -->
         </div>
       </div>
     </div>
 
     <!--Social Impact-->
     <div class="section">
-      <!--Social Impact-->
       <div class="w3-container w3-padding-32" id="nationwide">
         <h3 class="section-title 3-border-bottom w3-border-light-grey w3-padding-16">Do the players who prefer to make three-pointers earn more?</h3>
         <span class="material-symbols-outlined">
           rocket_launch
           </span>
       </div>
+      <img src="img/stars.jpg" style="position:absolute;left:785px;top:180px;width:700px;height:700px;">
       <div class="w3-row-padding row">
       <h2></h2> We collect the 3-pointers data, salary, and their Twitter account views and praise of their players. Perhaps there is a relationship between these factors...?
       <h3 class="instruction">Click on the dots to see relation between 3-pointers shooters and their social impact in the season 2016-2017.</h3>
       </div>
-      <div id="socialimpact" style="position:relative;left:300px;top:10px;width:800px;height:600px;"></div>
+      <div id="socialimpact" style="position:relative;left:0px;top:-10px;width:800px;height:600px;"></div>
       <script src="js/socialimpact.js"></script>   
     </div>
 
-    <!--timeline-->
+    <!--positions-->
     <div class="section">
       <div class="w3-container w3-padding-32" id="timeline_section">
-        <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">However, these problems are nothing new.</h3>
+        <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">How players of five positions differ in 3-pointers shot?</h3>
       </div>
       <div class="w3-row-padding row">
         <div id="timelineIntro">
-          <h4>There has always been a gender imbalance among faculty at these institutions. Only centuries after their founding
-            did women become a part of their leadership.</h4>
-          <h3>History of Female Leadership in Academia</h3>
+          <h4>Basketball is a team sport and players are generally divided into five positions to play different tactical roles on the court.</h4>
+          <h3 class="instruction">Hover on the table to see the position difference in 3P% and 3PAr between 1980-2017.</h3>
+          <br>
           <br>
           <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-          <img src="img/court.jpg" style="position:absolute;left:-100px;top:420px;width:800px;height:400px;">
+          <img src="img/court.png" style="position:absolute;left:-50px;top:220px;width:740px;height:600px;">
         </div>
       </div>
     </div>
 
 
-    <!--responses-->
+    <!--ages-->
     <div class="section">
-      <!--responses-->
       <div class="w3-container w3-padding-32" id="responses">
         <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">Can three-pointers set off the same boom in different ages?
           <em>Let's show it!</em>
         </h3>
       </div>
+      <h5 class="w3-row-padding row">Are you curious about the favours of 3-pointers balls among different ages players?<br>You can click on the four roses below to check and find the result!</h5>
       <div id="rose" style="position:relative;left:0px;top:20px;width: 1400px;height:500px;"></div>
       <script src="js/rose.js"></script>  
-      <div id="gdppart" style="position: absolute;left:630px;top:-570px;width: 800px;height: 600px;"></div>
+      <div id="gdppart" style="position: absolute;left:635px;top:-580px;width: 800px;height: 600px;"></div>
       <script src="js/part.js"></script>
       
     </div>
 
-    <!--age-->
-    <div class="section w3-container w3-padding-32">
-      <div class="row" id="survey">
-        <div>
-          <br>
-          <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">
-            <i>Now tell us how YOU feel!</i>
-          </h3>
-        </div>
-      </div>
-    </div>
 
     <!--about-->
     <div class="section w3-container w3-padding-32 last-section">
@@ -237,7 +229,7 @@
               <div class="w3-third" style="text-align: center">
                 <img src="img/tyf.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:80%; border-radius: 100%;">
                 <h4>Vann Tang</h4>
-                <h5>Rachel is a sophomore in Lowell concentrating in Computer Science.</h5>
+                <h5>Vann is a junior in ZJU concentrating in Robotics and Contrl Science.</h5>
               </div>
               <div class="w3-third" style="text-align: center">
                 <img src="img/lxh.jpg" class="w3-round" alt="Random Name" style="width:80%; border-radius: 100%;">
@@ -250,10 +242,9 @@
 
           <div class="w3-row">
             <h4>Notes</h4>
-            <h5>1. We would like to take special note to address that the gender-binary nature of this project is based
-              merely on the data/information we were able to find in the time we had provided to work on this project. The
-              lack of data concerning nonbinary gender identities is a serious issue that reflects the gravity of the problem.
-              Due to the lack of data on this and due to our focus on women, however, this was not given the attention needed.</h5>
+            <h5>1. We would like to take special note to dig into the relation between the success of a NBA player and 3-pointer ball.
+              Motivated by the fantastic performance by Stephen Curry, all of us three and many other boys pay more attention to the 3-pointer balls 
+              when we play basketball. The power of a superidol is huge. As a result, We want to do some research, data analyst and visualization. </h5>
             <h5>2. Our visualizations are based on publicly available data and information; any and all potential errors
               reflect those of these online resources.</h5>
           </div>
@@ -281,12 +272,9 @@
           </div>
 
           <h4>More on this project</h4>
-          <h5>This project was created as a final project for CS171. To learn more about how this project came to be, and to see where our data/information comes from, please
-            take a look at our process book
-            <a href="CS 171 Final Project Process Book.pdf" target="_blank">here</a> and our screencast
-            <a href="https://www.youtube.com/watch?v=-4c1ckOrUAw">here</a>.</h5>
-
-            <iframe src="//player.bilibili.com/player.html?aid=686897644&bvid=BV15U4y1C7kH&cid=802529593&page=1" scrolling="no" border="20" frameborder="no" framespacing="20" allowfullscreen="true"> </iframe>
+          <h5>This project is created as a final project for ZJU Data Visualization course. To learn more about this project,
+            take a look at our bilibili screencast below.</h5>
+            <iframe src="//player.bilibili.com/player.html?aid=686897644&bvid=BV15U4y1C7kH&cid=802529593&page=1" scrolling="no" border="20" frameborder="no" framespacing="20" allowfullscreen="true" style="position:absolute;left:150px;top:300px; width: 400px; height: 200px;"> </iframe>
         </div>
       </div>
 
@@ -294,6 +282,13 @@
   </div>
 </div>
 
+<!-- Development -->
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+<!-- Production -->
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
 <!-- Load JS libraries -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/leaflet.js"></script>
@@ -308,16 +303,10 @@
 
 <!-- Visualization objects -->
 <script src="js/barChart.js"></script>
-<script src="js/IvyLeagueMap.js"></script>
 <script type="text/javascript" src="js/sequences.js"></script>
 
 <!-- Load data, create visualizations -->
 <script src="js/main.js"></script>
-
-<!-- Load data, create visualizations -->
-<script src="js/piechart.js"></script>
-<script src="js/wagegap.js"></script>
-<script src="js/timeline.js"></script>
 
 </body>
 </html>

@@ -57,11 +57,11 @@ var option = {
     ],
     yAxis: [
       {
-        name: '3PA(m³/s)',
+        name: '3PA',
         type: 'value'
       },
       {
-        name: '3P%(mm)',
+        name: '3P%',
         nameLocation: 'start',
         alignTicks: true,
         type: 'value',
